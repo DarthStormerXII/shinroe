@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    /* Core colors - Light theme */
+    --background: 0 0% 98%;
+    --foreground: 220 13% 13%;
+    --card: 0 0% 100%;
+    --card-foreground: 220 13% 13%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 220 13% 13%;
+    --primary: 250 97% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 220 9% 94%;
+    --secondary-foreground: 220 13% 13%;
+    --muted: 220 9% 94%;
+    --muted-foreground: 220 9% 46%;
+    --accent: 220 9% 94%;
+    --accent-foreground: 220 13% 13%;
+    --destructive: 354 83% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 220 9% 86%;
+    --input: 220 9% 86%;
+    --ring: 250 97% 68%;
+    --radius: 0.5rem;
+    --font-sans: var(--font-geist-sans);
+    --font-mono: var(--font-geist-mono);
+
+    /* Brand colors - Light theme */
+    --violet: 250 97% 68%;
+    --violet-foreground: 0 0% 100%;
+    --coral: 357 100% 71%;
+    --coral-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+
+  .dark {
+    /* Core colors - Dark theme */
+    --background: 222 22% 12%;
+    --foreground: 220 9% 94%;
+    --card: 222 17% 14%;
+    --card-foreground: 220 9% 94%;
+    --popover: 222 17% 14%;
+    --popover-foreground: 220 9% 94%;
+    --primary: 250 97% 68%;
+    --primary-foreground: 0 0% 100%;
+    --secondary: 222 12% 18%;
+    --secondary-foreground: 220 9% 94%;
+    --muted: 222 12% 18%;
+    --muted-foreground: 220 9% 66%;
+    --accent: 222 12% 18%;
+    --accent-foreground: 220 9% 94%;
+    --destructive: 354 83% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 222 12% 22%;
+    --input: 222 12% 22%;
+    --ring: 250 97% 68%;
+
+    /* Brand colors - Dark theme (same as light for consistency) */
+    --violet: 250 97% 68%;
+    --violet-foreground: 0 0% 100%;
+    --coral: 357 100% 71%;
+    --coral-foreground: 0 0% 100%;
+    --success: 142 76% 36%;
+    --success-foreground: 0 0% 100%;
+    --warning: 38 92% 50%;
+    --warning-foreground: 0 0% 100%;
+  }
+}
+ 
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+}
