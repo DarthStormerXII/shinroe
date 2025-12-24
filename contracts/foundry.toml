@@ -1,0 +1,224 @@
+# See https://getfoundry.sh/config/ for all configuration options
+
+## defaults for _all_ profiles
+[profile.default]
+src = "src"
+out = "out"
+libs = ["lib", "dependencies"]  # Added dependencies for soldeer
+test = "test"
+script = "script"
+cache = true
+cache_path = "cache"
+broadcast = "broadcast"
+
+# Compilation
+solc = "0.8.26"
+evm_version = "paris"
+optimizer = true
+optimizer_runs = 200
+via_ir = false
+auto_detect_solc = true
+auto_detect_remappings = true
+use_literal_content = false
+bytecode_hash = "ipfs"
+cbor_metadata = true  # Required for Tenderly verification
+sparse_mode = false
+build_info = false
+extra_output = []
+extra_output_files = []
+
+# Testing
+verbosity = 2
+ffi = false
+sender = "0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38"
+tx_origin = "0x1804c8AB1F12E6bbf3894d4083f33e07309d1f38"
+initial_balance = "0xffffffffffffffffffffffff"
+block_number = 1
+block_timestamp = 1
+block_difficulty = 0
+block_prevrandao = "0x0000000000000000000000000000000000000000000000000000000000000000"
+block_coinbase = "0x0000000000000000000000000000000000000000"
+gas_limit = "18446744073709551615"
+gas_price = 0
+block_base_fee_per_gas = 0
+chain_id = 31337
+gas_reports = ["*"]
+gas_reports_ignore = []
+no_storage_caching = false
+# Removed matching patterns to use defaults
+threads = 0
+show_progress = true
+
+# Fuzzing
+[fuzz]
+runs = 256
+max_test_rejects = 65536
+seed = '0x3e8'
+dictionary_weight = 40
+include_storage = true
+include_push_bytes = true
+max_fuzz_dictionary_addresses = 10_000
+max_fuzz_dictionary_values = 10_000
+gas_report_samples = 256
+failure_persist_dir = "cache/fuzz"
+failure_persist_file = "failures"
+
+# Invariant Testing
+[invariant]
+runs = 256
+depth = 100
+fail_on_revert = false
+call_override = false
+dictionary_weight = 80
+include_storage = true
+include_push_bytes = true
+max_fuzz_dictionary_addresses = 10_000
+max_fuzz_dictionary_values = 10_000
+shrink_run_limit = 5000
+max_assume_rejects = 65536
+gas_report_samples = 256
+failure_persist_dir = "cache/invariant"
+# Enable coverage-guided fuzzing (stores and mutates call sequences)
+# corpus_dir = "cache/corpus"
+# corpus_min_size = 10
+
+# Formatter
+[fmt]
+line_length = 120
+tab_width = 4
+bracket_spacing = false
+int_types = "long"
+multiline_func_header = "all"
+quote_style = "double"
+number_underscore = "preserve"
+hex_underscore = "remove"
+single_line_statement_blocks = "preserve"
+override_spacing = false
+wrap_comments = false
+ignore = ["src/console.sol", "src/console2.sol", "dependencies/**"]
+contract_new_lines = false
+sort_imports = false
+
+# Documentation Generator
+[doc]
+out = "docs"
+title = ""
+book = "https://book.getfoundry.sh/"
+homepage = ""
+ignore = ["**/*.t.sol", "**/*.s.sol"]
+
+# Profiles for different environments
+[profile.ci]
+verbosity = 4
+fuzz = { runs = 10_000 }
+invariant = { runs = 1_000 }
+# Enable gas reports and coverage in CI
+gas_reports = ["*"]
+
+[profile.lite]
+optimizer = false
+optimizer_runs = 50
+# Quick testing with fewer runs
+fuzz = { runs = 50 }
+invariant = { runs = 10 }
+
+# Advanced testing profile
+[profile.deep]
+verbosity = 3
+fuzz = { runs = 50_000, max_test_rejects = 100_000, seed = '0x1' }
+invariant = { runs = 5_000, depth = 500, fail_on_revert = true }
+
+# Production deployment profile
+[profile.production]
+optimizer = true
+optimizer_runs = 10_000
+via_ir = true
+# Minimize contract size and remove metadata
+bytecode_hash = "none"
+cbor_metadata = false
+# Strict compilation
+ignored_warnings_from = []
+deny_warnings = true
+
+# Development profile with debug features
+[profile.debug]
+optimizer = false
+optimizer_runs = 1
+# Enable FFI for advanced testing
+ffi = true
+# More verbose output
+verbosity = 4
+# Show full stack traces
+traces = true
+
+# Coverage profile
+[profile.coverage]
+fuzz = { runs = 100 }
+invariant = { runs = 100 }
+
+# Network Configuration
+[rpc_endpoints]
+# Testnet
+sepolia = "${SEPOLIA_RPC_URL}"
+amoy = "https://rpc-amoy.polygon.technology"
+
+# Mainnet
+verychain = "https://rpc.verylabs.io"
+
+# Local
+localhost = "http://127.0.0.1:8545"
+anvil = "http://127.0.0.1:8545"
+
+# Tenderly DevNets
+tenderly = "${TENDERLY_DEVNET_URL}"
+
+# Blockscout Verification Configuration
+# IMPORTANT: Foundry uses the [etherscan] section name for ALL block explorers (Etherscan, Blockscout, etc.)
+# This is NOT using Etherscan - all URLs below point to Blockscout instances
+# The section must be named [etherscan] for Foundry compatibility, regardless of which explorer you use
+[etherscan]
+# Testnet (using Blockscout/OKLink)
+sepolia = { key = "dummy", url = "https://eth-sepolia.blockscout.com/api" }
+amoy = { key = "${OKLINK_API_KEY}", url = "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/AMOY_TESTNET" }
+
+# Tenderly verification (when using Tenderly DevNets)
+tenderly = { key = "${TENDERLY_ACCESS_TOKEN}", url = "${TENDERLY_VERIFIER_URL}" }
+
+# Soldeer Package Management
+[dependencies]
+forge-std = "1.9.4"
+"@openzeppelin-contracts" = "5.0.0"
+solmate = "6.2.0"
+solady = "0.0.275"
+# Example dependencies - uncomment and modify as needed
+# "@openzeppelin-contracts" = "5.0.0"
+# "@solmate" = "6.2.0"
+# "@prb-math" = "4.0.0"
+
+# Soldeer Configuration
+[soldeer]
+# Whether to use soldeer for dependency management
+enabled = true
+# Directory to store dependencies
+deps_directory = "dependencies"
+# Whether to auto-install on build
+auto_install = true
+# Soldeer registry URL (optional, uses default if not specified)
+# registry_url = "https://api.soldeer.xyz"
+
+# Compiler Remappings
+remappings = [
+    # Relative remappings
+    "@/=src/",
+    "@test/=test/",
+    "@script/=script/",
+    # Common libraries (installed via forge install to dependencies/)
+    "@openzeppelin/=dependencies/openzeppelin-contracts/contracts/",
+    "@openzeppelin-upgradeable/=dependencies/openzeppelin-contracts-upgradeable/contracts/",
+    "solmate/=dependencies/solmate/src/",
+    "forge-std/=dependencies/forge-std/src/",
+    "solady/=dependencies/solady/src/"
+]
+
+# Soldeer dependencies are managed dynamically
+# Install with: forge soldeer install <package-name>
