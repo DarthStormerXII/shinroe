@@ -1,0 +1,229 @@
+{
+  "project": "Shinroe - VeryChain Reference Implementation",
+  "version": "1.0.0",
+
+  "contracts": {
+    "HelloWorld": {
+      "source": "src/HelloWorld.sol:HelloWorld",
+      "type": "utility",
+      "description": "Simple greeting contract for testing"
+    },
+    "FreeMintToken": {
+      "source": "src/FreeMintToken.sol:FreeMintToken",
+      "type": "ERC20",
+      "description": "ERC20 token with free minting for testing"
+    },
+    "FreeMintNFT": {
+      "source": "src/FreeMintNFT.sol:FreeMintNFT",
+      "type": "ERC721",
+      "description": "ERC721 NFT with free minting for testing"
+    },
+    "ScoreRegistry": {
+      "source": "src/ScoreRegistry.sol:ScoreRegistry",
+      "type": "reputation",
+      "description": "Privacy-preserving reputation score storage"
+    },
+    "BadgeNFT": {
+      "source": "src/BadgeNFT.sol:BadgeNFT",
+      "type": "ERC721",
+      "description": "Soulbound reputation badges"
+    },
+    "EndorsementVault": {
+      "source": "src/EndorsementVault.sol:EndorsementVault",
+      "type": "vault",
+      "description": "Staked endorsements with decay mechanics"
+    },
+    "TokenFactory": {
+      "source": "src/TokenFactory.sol:TokenFactory",
+      "type": "factory",
+      "description": "ERC20 token factory for creating airdrop tokens"
+    },
+    "AirdropVault": {
+      "source": "src/AirdropVault.sol:AirdropVault",
+      "type": "vault",
+      "description": "Reputation-gated token airdrop distribution"
+    }
+  },
+
+  "chains": {
+    "amoy": {
+      "chainId": 80002,
+      "name": "Polygon Amoy",
+      "rpcEnvVar": "AMOY_RPC_URL",
+      "rpcUrl": "https://rpc-amoy.polygon.technology",
+      "explorer": {
+        "name": "PolygonScan",
+        "url": "https://amoy.polygonscan.com",
+        "apiUrl": "https://www.oklink.com/api/v5/explorer/contract/verify-source-code-plugin/AMOY_TESTNET",
+        "verifier": "etherscan"
+      },
+      "nativeCurrency": {
+        "name": "POL",
+        "symbol": "POL",
+        "decimals": 18
+      }
+    },
+    "sepolia": {
+      "chainId": 11155111,
+      "name": "Sepolia",
+      "rpcEnvVar": "SEPOLIA_RPC_URL",
+      "explorer": {
+        "name": "Blockscout",
+        "url": "https://eth-sepolia.blockscout.com",
+        "apiUrl": "https://eth-sepolia.blockscout.com/api/",
+        "verifier": "blockscout"
+      },
+      "nativeCurrency": {
+        "name": "Sepolia ETH",
+        "symbol": "ETH",
+        "decimals": 18
+      }
+    },
+    "verychain": {
+      "chainId": 7225,
+      "name": "VeryChain Mainnet",
+      "rpcUrl": "https://rpc.verylabs.io",
+      "rpcEnvVar": "VERYCHAIN_RPC_URL",
+      "explorer": {
+        "name": "VeryScan",
+        "url": "https://scan.verylabs.io",
+        "apiUrl": "https://scan.verylabs.io/api/",
+        "verifier": "blockscout"
+      },
+      "nativeCurrency": {
+        "name": "VERY",
+        "symbol": "VERY",
+        "decimals": 18
+      }
+    }
+  },
+
+  "deployments": {
+    "amoy": {
+      "HelloWorld": {
+        "address": "0x9eE30BdA6D0f19650336697de95eb0B429AF8E23",
+        "deploymentTx": "0x47fdfbbfe0114a636b1392c55116f3f2d6bc79902cf59816cdecd35fddaec4e2",
+        "blockNumber": null,
+        "verified": true
+      },
+      "FreeMintToken": {
+        "address": "0x4B11861596c60c2E6E5a5223F37FDBd9442c8426",
+        "deploymentTx": "0xb7a0aaf6ff16471ba765c1c4c544467303a87dd22a8b9c5d3c88a4d04cb5b06f",
+        "blockNumber": null,
+        "verified": true
+      },
+      "FreeMintNFT": {
+        "address": "0xFD2f15b929D98a835beD252f3f1243481A0653F7",
+        "deploymentTx": "0x92a1620217b4a43ef1907763de502f4cb17f97b421c1f34bacf87d8f7ef8b6d8",
+        "blockNumber": null,
+        "verified": true
+      },
+      "ScoreRegistry": {
+        "address": "0x3C32BfbD8Caa35bf33F2541Fb4c00B184F44eb66",
+        "deploymentTx": "0xc01b565350572c79f084a80c61a0b010b5118b3078bab029cef8cf16823fb107",
+        "blockNumber": null,
+        "verified": true
+      },
+      "BadgeNFT": {
+        "address": "0x0B8B4DdD94ca3dD3Cfb50Ecd5F0bd2Fb12Fe5193",
+        "deploymentTx": "0x706e78d0031394f5d0af1d927f9051ab264821f17622595472d7421e3980c7ce",
+        "blockNumber": null,
+        "verified": true
+      },
+      "EndorsementVault": {
+        "address": "0x6bD0065130cd02f53A5F9dFA8d473E53f9e33AD2",
+        "deploymentTx": "0x4e4380360c7118df6dacab95262b6ddecd5b266cc621ecdd1be4728079758708",
+        "blockNumber": null,
+        "verified": true
+      },
+      "TokenFactory": {
+        "address": "0x35aDf7f5A4dC3118E74365074040af94BE79CAa8",
+        "deploymentTx": "0x8dde36ec4a9e207045cfd4c9ee0d1b6095f27ab5b2c85b4d8fd0bdb059770129",
+        "blockNumber": null,
+        "verified": true
+      },
+      "AirdropVault": {
+        "address": "0x70C55848161C4ee78A726ABE715ccD5F4C69B9fa",
+        "deploymentTx": "0x5912c86fefa6eb59a0cd2a405483dd591ab50871e24d3d64e82ccc809415343d",
+        "blockNumber": null,
+        "verified": true
+      }
+    },
+    "sepolia": {
+      "FreeMintToken": {
+        "address": "0x2Dfc3375e79DC0fc9851F451D8cc7F94B2C5854c",
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": true
+      },
+      "FreeMintNFT": {
+        "address": "0x1B3b102adc9405EBB9A6a9Ff85562D5c8E5eB0D4",
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": true
+      }
+    },
+    "verychain": {
+      "HelloWorld": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "FreeMintToken": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "FreeMintNFT": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "ScoreRegistry": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "BadgeNFT": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "EndorsementVault": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "TokenFactory": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      },
+      "AirdropVault": {
+        "address": null,
+        "deploymentTx": null,
+        "blockNumber": null,
+        "verified": false
+      }
+    }
+  },
+
+  "sync": {
+    "frontend": {
+      "tokensPath": "../frontend/constants/tokens",
+      "contractsPath": "../frontend/constants/contracts",
+      "abiSource": "out"
+    },
+    "subgraphs": {
+      "configPath": "../subgraphs/deployment.config.json",
+      "abiPath": "../subgraphs"
+    }
+  }
+}
