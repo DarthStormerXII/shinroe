@@ -1,0 +1,190 @@
+# Shinroe Reputation System Subgraph Schema
+
+# ============ Core Entities ============
+
+type User @entity {
+  id: ID! # wallet address (lowercase)
+
+  # DID fields (may exist before on-chain registration)
+  did: String # did:ethr:verychain:0x...
+
+  # Profile fields
+  displayName: String
+  scoreHash: Bytes
+  profileUri: String # IPFS URI for on-chain profile metadata
+
+  # On-chain registration (may be null if not registered yet)
+  isPublic: Boolean!
+  registeredAt: BigInt # null if not on-chain yet
+  lastUpdated: BigInt
+
+  # Relationships (only meaningful for on-chain registered users)
+  endorsementsReceived: [Endorsement!]! @derivedFrom(field: "endorsee")
+  endorsementsGiven: [Endorsement!]! @derivedFrom(field: "endorser")
+  badges: [UserBadge!]! @derivedFrom(field: "user")
+
+  # Calculated
+  totalEndorsementWeight: BigInt!
+  isOnchainRegistered: Boolean! # Quick check for on-chain status
+}
+
+# Query for DID resolution
+type DIDMapping @entity {
+  id: ID! # did string (did:ethr:verychain:0x...)
+  address: String! # wallet address
+  registeredOnchain: Boolean!
+  createdAt: BigInt!
+}
+
+type Endorsement @entity {
+  id: ID! # endorsementId
+  endorser: User!
+  endorsee: User!
+  endorsementType: Int! # 0=GENERAL, 1=FINANCIAL, 2=PROFESSIONAL
+  stakeAmount: BigInt!
+  createdAt: BigInt!
+  active: Boolean!
+  withdrawnAt: BigInt
+}
+
+type UserBadge @entity {
+  id: ID! # address-badgeType
+  user: User!
+  badgeType: Int! # 0=VERIFIED_IDENTITY, 1=TRUSTED_TRADER, etc.
+  tokenId: BigInt!
+  mintedAt: BigInt!
+  active: Boolean!
+  revokedAt: BigInt
+}
+
+# ============ Event Log Entities (Immutable) ============
+
+type ScoreUpdate @entity(immutable: true) {
+  id: Bytes! # txHash-logIndex
+  user: User!
+  oldHash: Bytes
+  newHash: Bytes!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+type ProfileUpdate @entity(immutable: true) {
+  id: Bytes! # txHash-logIndex
+  user: User!
+  profileUri: String!
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+type EndorsementEvent @entity(immutable: true) {
+  id: Bytes! # txHash-logIndex
+  endorsementId: BigInt!
+  eventType: String! # CREATED, WITHDRAWN, SLASHED
+  endorser: Bytes
+  endorsee: Bytes
+  endorsementType: Int
+  stakeAmount: BigInt
+  returnedAmount: BigInt
+  slashedAmount: BigInt
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+type BadgeEvent @entity(immutable: true) {
+  id: Bytes! # txHash-logIndex
+  user: Bytes!
+  badgeType: Int!
+  tokenId: BigInt!
+  eventType: String! # MINTED, REVOKED
+  timestamp: BigInt!
+  blockNumber: BigInt!
+  transactionHash: Bytes!
+}
+
+# ============ Aggregation Entities ============
+
+type DailyStats @entity {
+  id: ID! # date (YYYY-MM-DD)
+  date: BigInt!
+  newUsers: BigInt!
+  endorsementsCreated: BigInt!
+  endorsementsWithdrawn: BigInt!
+  totalStaked: BigInt!
+  badgesMinted: BigInt!
+}
+
+type GlobalStats @entity {
+  id: ID! # "global"
+  totalUsers: BigInt!
+  totalEndorsements: BigInt!
+  activeEndorsements: BigInt!
+  totalBadgesMinted: BigInt!
+  totalStaked: BigInt!
+  lastUpdated: BigInt!
+}
+
+# ============ Token Factory ============
+
+type Token @entity {
+  id: ID! # token address
+  creator: User!
+  name: String!
+  symbol: String!
+  decimals: Int!
+  totalSupply: BigInt!
+  createdAt: BigInt!
+  createdTx: String!
+  airdrops: [Airdrop!]! @derivedFrom(field: "token")
+}
+
+# ============ Airdrop System ============
+
+type Airdrop @entity {
+  id: ID! # airdrop ID
+  creator: User!
+  token: Token!
+  amountPerClaim: BigInt!
+  totalAmount: BigInt!
+  claimedAmount: BigInt!
+  claimCount: Int!
+  startTime: BigInt!
+  endTime: BigInt!
+  active: Boolean!
+  metadataUri: String!
+
+  # Eligibility criteria
+  minScore: BigInt!
+  requiredBadges: [Int!]!
+  minEndorsementWeight: BigInt!
+  requiresRegistration: Boolean!
+
+  # Relations
+  claims: [AirdropClaim!]! @derivedFrom(field: "airdrop")
+
+  # Timestamps
+  createdAt: BigInt!
+  cancelledAt: BigInt
+}
+
+type AirdropClaim @entity {
+  id: ID! # airdropId-userAddress
+  airdrop: Airdrop!
+  claimer: User!
+  amount: BigInt!
+  claimedAt: BigInt!
+  txHash: String!
+}
+
+# ============ Airdrop Aggregates ============
+
+type AirdropStats @entity {
+  id: ID! # "global"
+  totalAirdrops: Int!
+  activeAirdrops: Int!
+  totalTokensCreated: Int!
+  totalClaimsCount: Int!
+  totalValueDistributed: BigInt!
+}
