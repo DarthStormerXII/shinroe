@@ -1,0 +1,28 @@
+{
+  "name": "shinroe",
+  "version": "1.0.0",
+  "description": "Subgraph for indexing smart contract events",
+  "scripts": {
+    "codegen": "graph codegen",
+    "build": "graph build",
+    "test": "graph test",
+    "prepare:amoy": "mustache config/amoy.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:verychain": "mustache config/verychain.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:mainnet": "mustache config/mainnet.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:sepolia": "mustache config/sepolia.json subgraph.template.yaml > subgraph.yaml",
+    "prepare:base": "mustache config/base.json subgraph.template.yaml > subgraph.yaml",
+    "deploy:thegraph": "graph deploy --studio $npm_package_name",
+    "deploy:goldsky": "goldsky subgraph deploy $npm_package_name/1.0.0 --path .",
+    "create:local": "graph create --node http://localhost:8020/ $npm_package_name",
+    "deploy:local": "graph deploy --node http://localhost:8020/ --ipfs http://localhost:5001 $npm_package_name",
+    "export": "node scripts/export-frontend-config.js"
+  },
+  "dependencies": {
+    "@graphprotocol/graph-cli": "^0.79.0",
+    "@graphprotocol/graph-ts": "^0.35.1"
+  },
+  "devDependencies": {
+    "matchstick-as": "^0.6.0",
+    "mustache": "^4.2.0"
+  }
+}

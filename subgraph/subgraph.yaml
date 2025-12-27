@@ -1,0 +1,142 @@
+specVersion: 1.0.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ScoreRegistry
+    network: verychain
+    source:
+      address: "0x7cc5385b2fa1ca408a2f7f938001cf0cceca390c"
+      abi: ScoreRegistry
+      startBlock: 4150000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - ScoreUpdate
+        - ProfileUpdate
+        - GlobalStats
+        - DailyStats
+      abis:
+        - name: ScoreRegistry
+          file: ./abis/ScoreRegistry.json
+      eventHandlers:
+        - event: ScoreRegistered(indexed address,bytes32,uint256)
+          handler: handleScoreRegistered
+        - event: ScoreUpdated(indexed address,bytes32,bytes32,uint256)
+          handler: handleScoreUpdated
+        - event: VisibilityChanged(indexed address,bool)
+          handler: handleVisibilityChanged
+        - event: ProfileUpdated(indexed address,string)
+          handler: handleProfileUpdated
+      file: ./src/mappings/score-registry.ts
+
+  - kind: ethereum
+    name: EndorsementVault
+    network: verychain
+    source:
+      address: "0xdf7bc712757ef8bec78ca24b3f01066c825421f7"
+      abi: EndorsementVault
+      startBlock: 4150000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - Endorsement
+        - EndorsementEvent
+        - GlobalStats
+        - DailyStats
+      abis:
+        - name: EndorsementVault
+          file: ./abis/EndorsementVault.json
+      eventHandlers:
+        - event: EndorsementCreated(indexed uint256,indexed address,indexed address,uint8,uint256,uint256)
+          handler: handleEndorsementCreated
+        - event: EndorsementWithdrawn(indexed uint256,indexed address,uint256)
+          handler: handleEndorsementWithdrawn
+        - event: EndorsementSlashed(indexed uint256,uint256)
+          handler: handleEndorsementSlashed
+      file: ./src/mappings/endorsement-vault.ts
+
+  - kind: ethereum
+    name: BadgeNFT
+    network: verychain
+    source:
+      address: "0xcfcd96d4b017bc83fd67b030d32d103a7f6f485d"
+      abi: BadgeNFT
+      startBlock: 4150000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - User
+        - UserBadge
+        - BadgeEvent
+        - GlobalStats
+        - DailyStats
+      abis:
+        - name: BadgeNFT
+          file: ./abis/BadgeNFT.json
+      eventHandlers:
+        - event: BadgeMinted(indexed address,indexed uint8,uint256)
+          handler: handleBadgeMinted
+        - event: BadgeRevoked(indexed address,indexed uint8,uint256)
+          handler: handleBadgeRevoked
+      file: ./src/mappings/badge-nft.ts
+
+  - kind: ethereum
+    name: TokenFactory
+    network: verychain
+    source:
+      address: "0xbefdc386aa5aeca6d9c45f6c316c43c5e01dbb44"
+      abi: TokenFactory
+      startBlock: 4150000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Token
+        - AirdropStats
+      abis:
+        - name: TokenFactory
+          file: ./abis/TokenFactory.json
+      eventHandlers:
+        - event: TokenCreated(indexed address,indexed address,string,string,uint256)
+          handler: handleTokenCreated
+      file: ./src/mappings/token-factory.ts
+
+  - kind: ethereum
+    name: AirdropVault
+    network: verychain
+    source:
+      address: "0xfb66a25b0b81285e8bef1e6ca35976ec49b70056"
+      abi: AirdropVault
+      startBlock: 4150000
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.7
+      language: wasm/assemblyscript
+      entities:
+        - Airdrop
+        - AirdropClaim
+        - Token
+        - AirdropStats
+      abis:
+        - name: AirdropVault
+          file: ./abis/AirdropVault.json
+      eventHandlers:
+        - event: AirdropCreated(indexed uint256,indexed address,address)
+          handler: handleAirdropCreated
+        - event: AirdropClaimed(indexed uint256,indexed address,uint256)
+          handler: handleAirdropClaimed
+        - event: AirdropCancelled(indexed uint256)
+          handler: handleAirdropCancelled
+      file: ./src/mappings/airdrop-vault.ts
