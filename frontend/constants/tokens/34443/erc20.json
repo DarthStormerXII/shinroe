@@ -1,0 +1,58 @@
+[
+  {
+    "address": "0xef043d913b196dc87CB1256850894AA72DAD5933",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0x585afea249031Ea4168A379F664e91dFc5F77E7D",
+    "name": "Renzo Restaked ETH Stage 9",
+    "symbol": "EZETHSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0xcA4b9B3b6Dae4E5Dc2D749b2bD400ef62E7ae642",
+    "name": "USDC",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  },
+  {
+    "address": "0xf0F161fDA2712DB8b566946122a5af183995e2eD",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDT/logo.svg"
+  },
+  {
+    "address": "0xcDd475325D6F564d27247D1DddBb0DAc6fA0a5CF",
+    "name": "Wrapped BTC",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/WBTC/logo.svg"
+  },
+  {
+    "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+    "name": "Renzo Restaked ETH",
+    "symbol": "ezETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EZETH/logo.svg"
+  },
+  {
+    "address": "0x1217BfE6c773EEC6cc4A38b5Dc45B92292B6E189",
+    "name": "OpenUSDT",
+    "symbol": "oUSDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oUSDT/logo.svg"
+  },
+  {
+    "address": "0x0290B74980C051EB46b84b1236645444e77da0E9",
+    "name": "OpenUSDT",
+    "symbol": "oUSDTSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  }
+]

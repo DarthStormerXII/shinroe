@@ -1,0 +1,9 @@
+[
+  {
+    "address": "0x5fd84259d66Cd46123540766Be93DFE6D43130D7",
+    "name": "USDC",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  }
+]

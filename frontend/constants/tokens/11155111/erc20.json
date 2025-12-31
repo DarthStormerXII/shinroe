@@ -1,0 +1,16 @@
+[
+  {
+    "address": "0xeDF994D49F865D3a4bd6F74AeFbe1DcCAE7204F2",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0x29A873159D5e14AcBd63913D4A7E2df04570c666",
+    "name": "USDC",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  }
+]

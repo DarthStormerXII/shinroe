@@ -1,0 +1,121 @@
+[
+  {
+    "address": "0x8da914daf9fc05D0e31435f7bd9633ffFC41f20B",
+    "name": "The Doge NFT",
+    "symbol": "DOG",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/DOG/logo.jpg"
+  },
+  {
+    "address": "0x14A77BdAb46bBEb7DAfc3E4cB4732A51241Ef539",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0x585afea249031Ea4168A379F664e91dFc5F77E7D",
+    "name": "Renzo Restaked ETH Stage 9",
+    "symbol": "EZETHSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x9923DB8d7FBAcC2E69E87fAd19b886C81cd74979",
+    "name": "Hyperlane",
+    "symbol": "HYPER",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/HYPER/logo.svg"
+  },
+  {
+    "address": "0x31cD131F5F6e1Cc0d6743F695Fc023B70D0aeAd8",
+    "name": "Hyperlane",
+    "symbol": "HYPERSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x0633E91f64C22d4FEa53dbE6e77B7BA4093177B8",
+    "name": "Lit Protocol",
+    "symbol": "LITKEY",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LITKEY/logo.svg"
+  },
+  {
+    "address": "0x978B9dE4D8A41b023408383e3B4F760932AaDdc1",
+    "name": "Lumia Token",
+    "symbol": "LUMIA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LUMIA/logo.svg"
+  },
+  {
+    "address": "0x4200000000000000000000000000000000000042",
+    "name": "Optimism",
+    "symbol": "OP",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/OP/logo.svg"
+  },
+  {
+    "address": "0x17906b1Cd88aA8EfaEfC5e82891B52a22219BD45",
+    "name": "Superseed",
+    "symbol": "SUPR",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/SUPR/logo.svg"
+  },
+  {
+    "address": "0xf2aCC7a8Cd1fAA7a178B1569e11505372ea7943B",
+    "name": "Toby ToadGod",
+    "symbol": "TOBY",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TOBY/logo.svg"
+  },
+  {
+    "address": "0xe36c02471e708a9f16da58168da744b059a1c6fe",
+    "name": "OFFICIAL TRUMP",
+    "symbol": "TRUMP",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TRUMP/logo.png"
+  },
+  {
+    "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  },
+  {
+    "address": "0x0b2C639c533813f4Aa9D7837CAf62653d097Ff85",
+    "name": "USD Coin",
+    "symbol": "USDCSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x94b008aA00579c1307B0EF2c499aD98a8ce58e58",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDT/logo.svg"
+  },
+  {
+    "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+    "name": "Renzo Restaked ETH",
+    "symbol": "ezETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EZETH/logo.svg"
+  },
+  {
+    "address": "0x1217BfE6c773EEC6cc4A38b5Dc45B92292B6E189",
+    "name": "OpenUSDT",
+    "symbol": "oUSDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oUSDT/logo.svg"
+  },
+  {
+    "address": "0x0290B74980C051EB46b84b1236645444e77da0E9",
+    "name": "OpenUSDT",
+    "symbol": "oUSDTSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  }
+]

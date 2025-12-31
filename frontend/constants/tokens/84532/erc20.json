@@ -1,0 +1,16 @@
+[
+  {
+    "address": "0xC2455315f69696295b357428fe13970bB5B4eFfA",
+    "name": "TIA",
+    "symbol": "TIA",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/TIA/logo.svg"
+  },
+  {
+    "address": "0x036CbD53842c5426634e7929541eC2318f3dCF7e",
+    "name": "USDC",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  }
+]

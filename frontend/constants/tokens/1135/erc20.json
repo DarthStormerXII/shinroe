@@ -1,0 +1,30 @@
+[
+  {
+    "address": "0x85E9ae52B10f35e3D15264F1E906895B1D7Da1a0",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0x0FC41a92F526A8CD22060A4052e156502D6B9db0",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x1217BfE6c773EEC6cc4A38b5Dc45B92292B6E189",
+    "name": "OpenUSDT",
+    "symbol": "oUSDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oUSDT/logo.svg"
+  },
+  {
+    "address": "0x0290B74980C051EB46b84b1236645444e77da0E9",
+    "name": "OpenUSDT",
+    "symbol": "oUSDTSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "address": "0xF85379CF296f84871dee84826153d6F5ccA9de3B",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0xf55BEC9cafDbE8730f096Aa55dad6D22d44099Df",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDT/logo.svg"
+  },
+  {
+    "address": "0x3C1BCa5a656e69edCD0D4E36BEbb3FcDAcA60Cf1",
+    "name": "Wrapped BTC",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/WBTC/logo.svg"
+  }
+]

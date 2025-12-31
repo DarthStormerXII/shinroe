@@ -1,0 +1,404 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "retry": "Retry",
+    "cancel": "Cancel",
+    "save": "Save",
+    "delete": "Delete",
+    "confirm": "Confirm",
+    "close": "Close",
+    "search": "Search",
+    "viewTx": "View TX",
+    "tryAgain": "Try Again",
+    "noChange": "No change",
+    "thisMonth": "this month",
+    "connectWallet": "Connect Your Wallet",
+    "connectWalletDesc": "Connect your wallet to view your reputation score",
+    "connectWalletSettings": "Connect your wallet to access settings",
+    "checkingRegistration": "Checking registration status...",
+    "errorLoading": "Error loading score: {error}",
+    "chains": "chains",
+    "appName": "Shinroe",
+    "anonymous": "Anonymous",
+    "loadMore": "Load More",
+    "back": "Back"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "verify": "Verify",
+    "airdrops": "Airdrops",
+    "settings": "Settings"
+  },
+  "navbar": {
+    "settings": "Settings",
+    "appConfiguration": "App Configuration",
+    "status": "Status",
+    "mode": "Mode",
+    "networks": "Networks",
+    "configured": "Configured",
+    "incomplete": "Incomplete",
+    "defaults": "Defaults",
+    "custom": "Custom",
+    "missingConfiguration": "Missing Configuration:",
+    "andMore": "...and {count} more",
+    "openConfiguration": "Open Configuration"
+  },
+  "network": {
+    "loading": "Loading...",
+    "noNetworks": "No networks configured",
+    "switching": "Switching..."
+  },
+  "landing": {
+    "badge": "On-Chain Identity",
+    "heroTitle": "Your Reputation,",
+    "heroHighlight": "On-Chain",
+    "heroDescription": "Shinroe builds your decentralized reputation score through verifiable on-chain activity, endorsements, and achievements. Own your identity in Web3.",
+    "getStarted": "Get Started",
+    "verifyUser": "Verify a User",
+    "buildTrust": "Build Trust in Web3",
+    "buildTrustDesc": "Shinroe provides the tools you need to establish and verify reputation on-chain.",
+    "whyShinroe": "Why Shinroe?",
+    "whyShinroeDesc": "Traditional reputation systems are centralized and siloed. Shinroe gives you a portable, verifiable identity that works across the entire Web3 ecosystem.",
+    "sampleScore": "Sample Score",
+    "readyTitle": "Ready to Build Your Reputation?",
+    "readyDesc": "Connect your wallet and start building your on-chain reputation today.",
+    "launchApp": "Launch App",
+    "features": {
+      "onChainReputation": {
+        "title": "On-Chain Reputation",
+        "description": "Build a verifiable reputation score stored permanently on the blockchain."
+      },
+      "earnBadges": {
+        "title": "Earn Badges",
+        "description": "Collect badges that showcase your achievements and trustworthiness."
+      },
+      "peerEndorsements": {
+        "title": "Peer Endorsements",
+        "description": "Receive endorsements from other verified users to boost your score."
+      },
+      "trackProgress": {
+        "title": "Track Progress",
+        "description": "Monitor your reputation growth with detailed analytics and history."
+      }
+    },
+    "benefits": {
+      "decentralized": "Decentralized identity verification",
+      "portable": "Portable reputation across dApps",
+      "privacy": "Privacy-preserving score sharing",
+      "sybil": "Sybil-resistant endorsements"
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Track your on-chain activity and reputation",
+    "scoreMax": "/ 1000",
+    "connectWalletScore": "Connect wallet to view score"
+  },
+  "scoreCard": {
+    "positiveChange": "+{trend} this month",
+    "negativeChange": "{trend} this month"
+  },
+  "scoreBreakdown": {
+    "title": "Score Breakdown",
+    "noData": "No score data available",
+    "categoryStrength": "Category strength:"
+  },
+  "improvementTips": {
+    "title": "Improve Your Score",
+    "connectWallet": "Connect wallet for tips",
+    "getEndorsed": {
+      "title": "Get Endorsed",
+      "description": "Ask trusted users to endorse your profile with staked VERY",
+      "impact": "+10 per endorsement"
+    },
+    "endorseOthers": {
+      "title": "Endorse Others",
+      "description": "Endorse trusted users to earn the Community Builder badge",
+      "impact": "Earn badge at 10+"
+    },
+    "earnBadges": {
+      "title": "Earn Badges",
+      "description": "Complete milestones to unlock badges and boost your score",
+      "impact": "Permanent boost"
+    }
+  },
+  "scoreHistory": {
+    "title": "Score History",
+    "notConfigured": "Subgraph not configured",
+    "notConfiguredDesc": "Deploy the subgraph to track score history over time",
+    "noHistory": "No history available yet"
+  },
+  "badges": {
+    "title": "Badges",
+    "subtitle": "Earn soulbound badges for your achievements",
+    "earned": "Earned",
+    "available": "Available",
+    "total": "Total",
+    "failedToLoad": "Failed to load badges",
+    "claimHint": "You have {count} badge(s) to claim!",
+    "claimHintSingular": "You have 1 badge to claim!",
+    "claimHintPlural": "You have {count} badges to claim!"
+  },
+  "claimBadge": {
+    "claiming": "Claiming {badge}...",
+    "claimed": "{badge} claimed!",
+    "claimedSuccess": "Badge claimed!",
+    "notEligible": "Not Eligible Yet",
+    "moreNeeded": "{count} more {unit} needed",
+    "eligible": "You are eligible!",
+    "claimButton": "Claim Badge",
+    "claimingButton": "Claiming...",
+    "units": {
+      "activities": "activities",
+      "endorsements": "endorsements given",
+      "points": "points"
+    }
+  },
+  "endorsements": {
+    "title": "Endorsements",
+    "received": "Received",
+    "given": "Given",
+    "weight": "Weight",
+    "endorse": "Endorse",
+    "failedToLoad": "Failed to load endorsements",
+    "noEndorsements": "No endorsements yet",
+    "noEndorsementsGiven": "No endorsements given yet",
+    "noEndorsementsReceived": "No endorsements received yet",
+    "withdraw": "Withdraw",
+    "withdrawing": "Withdrawing...",
+    "allTypes": "All Types",
+    "highestStake": "Highest Stake",
+    "mostRecent": "Most Recent",
+    "oldestFirst": "Oldest First",
+    "showing": "Showing {current} of {total} endorsements",
+    "registered": "Registered"
+  },
+  "endorseModal": {
+    "title": "Endorse Someone",
+    "description": "Vouch for a registered user by staking tokens on their reputation.",
+    "endorsementType": "Endorsement Type",
+    "stakeAmount": "Stake Amount (VERY)",
+    "minimum": "Minimum: {amount} VERY",
+    "stake": "Stake",
+    "protocolFee": "Protocol Fee ({percentage}%)",
+    "total": "Total",
+    "selectUser": "Please select a user to endorse",
+    "stakeRequired": "Stake amount is required",
+    "minimumStake": "Minimum stake is {amount} VERY",
+    "invalidStake": "Invalid stake amount",
+    "creating": "Creating endorsement...",
+    "created": "Endorsement created!",
+    "createdSuccess": "Endorsement created successfully!",
+    "createButton": "Create Endorsement"
+  },
+  "registration": {
+    "title": "Complete Registration",
+    "description": "Set up your reputation profile on VeryChain",
+    "profilePicture": "Profile Picture (Optional)",
+    "displayName": "Display Name",
+    "displayNamePlaceholder": "Enter your display name",
+    "veryChatLinked": "VeryChat linked:",
+    "verifiedBadge": "Verified Identity Badge",
+    "verifiedBadgeDesc": "You'll receive a soulbound NFT badge confirming your verified identity",
+    "uploadingImage": "Uploading profile picture to IPFS...",
+    "registrationComplete": "Registration Complete!",
+    "welcomeMessage": "Welcome to Shinroe",
+    "registrationFailed": "Registration Failed",
+    "registerButton": "Register & Get Badge",
+    "uploading": "Uploading...",
+    "pleaseName": "Please enter a display name",
+    "imageError": "Please select an image file",
+    "imageSizeError": "Image must be less than 5MB",
+    "ipfsNote": "Uploaded to IPFS for permanent storage"
+  },
+  "verify": {
+    "title": "Verify User",
+    "subtitle": "Look up another user's reputation score and badges",
+    "searchPlaceholder": "Enter wallet address (0x...) or display name",
+    "recent": "Recent",
+    "noResults": "No results found",
+    "registeredUsers": "Registered Users",
+    "registeredUsersCount": "Registered Users ({count})",
+    "refreshUsers": "Refresh user list",
+    "noRegisteredUsers": "No registered users found",
+    "viewFullProfile": "View Full Profile",
+    "privateProfile": "Private Profile"
+  },
+  "publicProfile": {
+    "score": "Score",
+    "badges": "Badges",
+    "endorsements": "Endorsements",
+    "private": "Private Profile",
+    "privateDesc": "This user has set their profile to private",
+    "requestAccess": "Request Access",
+    "notFound": "User not found",
+    "notFoundDesc": "No registered user found at this address"
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Manage your Shinroe profile and connected accounts",
+    "connectedWallet": "Connected Wallet",
+    "dangerZone": "Danger Zone",
+    "dangerZoneDesc": "Irreversible actions for your account",
+    "deleteAccount": "Delete Account Data",
+    "deleteAccountDesc": "This removes linked accounts and off-chain data. On-chain data (endorsements, badges) cannot be removed.",
+    "deleteConfirm": "Are you sure? This will remove your linked accounts. On-chain data cannot be deleted.",
+    "deleteFailed": "Failed to delete account data"
+  },
+  "privacy": {
+    "title": "Privacy Settings",
+    "subtitle": "Control who can see your reputation score and profile",
+    "publicProfile": "Public Profile",
+    "publicDesc": "Anyone can view your score",
+    "privateDesc": "Only you can view your score",
+    "notice": "Your on-chain activity is always visible. This setting only controls access to your calculated score.",
+    "exportProof": "Export Score Proof",
+    "profileNowPublic": "Profile is now public",
+    "profileNowPrivate": "Profile is now private",
+    "updateFailed": "Failed to update visibility",
+    "exportSuccess": "Score proof exported",
+    "exportFailed": "Failed to export proof"
+  },
+  "verychat": {
+    "title": "VeryChat Integration",
+    "subtitle": "Link your VeryChat account to include identity signals in your score",
+    "handle": "VeryChat Handle",
+    "handlePlaceholder": "@yourhandle",
+    "linkButton": "Link VeryChat Account",
+    "unlinkButton": "Unlink Account",
+    "linked": "Linked",
+    "linkSuccess": "Account linked successfully",
+    "linkFailed": "Failed to link",
+    "unlinkFailed": "Failed to unlink",
+    "mintingBadge": "Minting Verified Identity badge...",
+    "badgeMinted": "Verified Identity badge minted!",
+    "badgeFailed": "Badge minting failed. You can claim it later from the Dashboard.",
+    "sendCode": "Send Verification Code",
+    "codeSent": "Verification code sent! Check your VeryChat messages.",
+    "codeRequestFailed": "Failed to send verification code",
+    "codeInstructions": "A 6-digit code was sent to your VeryChat account",
+    "enterCode": "Enter Verification Code",
+    "verifyAndLink": "Verify & Link",
+    "invalidCode": "Invalid or expired verification code",
+    "verifyFailed": "Verification failed",
+    "signatureRejected": "Please approve the signature request in your wallet to complete linking",
+    "verified": "VeryChat Verified",
+    "badgeOnChain": "Verified Identity badge minted on-chain"
+  },
+  "userSelector": {
+    "selectUser": "Select a user to endorse",
+    "searchPlaceholder": "Search by name or address...",
+    "noUsersFound": "No registered users found",
+    "loadingUsers": "Loading users...",
+    "startTyping": "Start typing to search"
+  },
+  "verychatContacts": {
+    "title": "VeryChat Contacts",
+    "subtitle": "Quick access to your VeryChat contacts",
+    "noContacts": "No VeryChat contacts available",
+    "linkFirst": "Link your VeryChat account first"
+  },
+  "tiers": {
+    "newcomer": "Newcomer",
+    "established": "Established",
+    "trusted": "Trusted",
+    "elite": "Elite",
+    "excellent": "Excellent",
+    "good": "Good",
+    "building": "Building",
+    "at_risk": "At Risk"
+  },
+  "categories": {
+    "identity": {
+      "name": "Identity",
+      "description": "Verified accounts and credentials"
+    },
+    "financial": {
+      "name": "Financial",
+      "description": "Asset holdings and DeFi activity"
+    },
+    "social": {
+      "name": "Social",
+      "description": "Community engagement and endorsements"
+    },
+    "transactional": {
+      "name": "Transactional",
+      "description": "On-chain transaction history"
+    },
+    "behavioral": {
+      "name": "Behavioral",
+      "description": "Wallet age and consistency"
+    }
+  },
+  "endorsementTypes": {
+    "general": "General",
+    "financial": "Financial",
+    "professional": "Professional",
+    "personal": "Personal"
+  },
+  "badgeNames": {
+    "verifiedMember": "Verified Member",
+    "powerUser": "Power User",
+    "socialStar": "Social Star",
+    "foundingMember": "Founding Member",
+    "vip": "VIP",
+    "badge": "Badge"
+  },
+  "badgeDescriptions": {
+    "verifiedMember": "Your identity has been verified",
+    "powerUser": "You are an active member of the community",
+    "socialStar": "You help others in the community",
+    "foundingMember": "You joined during launch",
+    "vip": "You have achieved top-tier status"
+  },
+  "badgeRequirements": {
+    "verifiedMember": "Verify your identity",
+    "powerUser": "Complete 50 activities",
+    "socialStar": "Help 10+ friends",
+    "foundingMember": "Join within first 30 days",
+    "vip": "Reach VIP status"
+  },
+  "badgeProgress": {
+    "earned": "Earned {date}",
+    "activities": "activities",
+    "endorsementsGiven": "endorsements given",
+    "points": "points",
+    "moreNeeded": "{count} more {unit} needed"
+  },
+  "linked": "Linked",
+  "wallet": {
+    "connect": "Connect Wallet",
+    "connecting": "Connecting...",
+    "initializing": "Initializing...",
+    "copyAddress": "Copy Address",
+    "copied": "Copied!",
+    "viewExplorer": "View on Explorer",
+    "gasPrice": "Gas Price",
+    "disconnect": "Disconnect",
+    "disconnecting": "Disconnecting...",
+    "notConfigured": "WEPIN not configured"
+  },
+  "transaction": {
+    "waitingConfirmation": "Waiting for wallet confirmation...",
+    "success": "Transaction Successful!",
+    "failed": "Transaction Failed",
+    "view": "View",
+    "switchChainFailed": "Failed to switch chain",
+    "errorOccurred": "An error occurred"
+  },
+  "demoPrefill": {
+    "displayName": "Demo User",
+    "veryChatHandle": "@demo_user",
+    "accessRequestReason": "I am considering a business partnership and would like to verify your reputation before proceeding.",
+    "signMessage": "Hello, WEPIN!",
+    "ipTitle": "Demo Digital Artwork",
+    "ipDescription": "A sample digital artwork for demonstration purposes. This IP showcases the Story Protocol integration.",
+    "creatorName": "Demo Artist",
+    "creatorRole": "Artist",
+    "evidenceTitle": "Copyright Infringement Claim",
+    "evidenceDescription": "This IP asset appears to be an unauthorized copy of my original artwork.",
+    "originalWorkTitle": "Original Demo Artwork",
+    "originalWorkCreator": "Demo Creator",
+    "additionalNotes": "The infringing work was published after my original without permission."
+  }
+}

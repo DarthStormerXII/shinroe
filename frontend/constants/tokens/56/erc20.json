@@ -1,0 +1,289 @@
+[
+  {
+    "address": "0x2E3B0f8eb2a98bC4ddF55477CC3B49bdd1da4EAF",
+    "name": "Best Wallet Token",
+    "symbol": "BEST",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/BEST/logo.svg"
+  },
+  {
+    "address": "0x8d0e034611B691683377d2fC9958122a30F7DAab",
+    "name": "BNB",
+    "symbol": "BNB",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x2a48a41301E6635DF9E65B80063Ff84677142619",
+    "name": "Carnomaly",
+    "symbol": "CARR",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/CARR/logo.svg"
+  },
+  {
+    "address": "0x1E9A8531548aEd9b7fb83e80eF66422d182998C3",
+    "name": "CENT",
+    "symbol": "CENT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/CENT/logo.svg"
+  },
+  {
+    "address": "0x1AF3F329e8BE154074D8769D1FFa4eE058B1DBc3",
+    "name": "Dai Stablecoin",
+    "symbol": "DAI",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x0C808F0464C423d5Ea4F4454fcc23B6E2Ae75562",
+    "name": "LayerEdge",
+    "symbol": "EDGEN",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EDGEN/logo.svg"
+  },
+  {
+    "address": "0x2170Ed0880ac9A755fd29B2688956BD959F933F8",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0xc8a9E4927301cE381A96Dd639f154f1A539fd939",
+    "name": "ETN",
+    "symbol": "ETN",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETN/logo.svg"
+  },
+  {
+    "address": "0x585afea249031Ea4168A379F664e91dFc5F77E7D",
+    "name": "Renzo Restaked ETH Stage 9",
+    "symbol": "EZETHSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x5c8daEabc57E9249606D3bD6d1E097eF492eA3C5",
+    "name": "FUEL",
+    "symbol": "FUEL",
+    "decimals": 9,
+    "logoURI": "/deployments/warp_routes/FUEL/logo.svg"
+  },
+  {
+    "address": "0x9A4a67721573f2c9209DfFf972c52Be4E3F6642e",
+    "name": "GoPlus Security",
+    "symbol": "GPS",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/GPS/logo.svg"
+  },
+  {
+    "address": "0x44F161aE29361E332dEA039DFA2F404E0bC5B5Cc",
+    "name": "Humanity",
+    "symbol": "H",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/H/logo.svg"
+  },
+  {
+    "address": "0x1a5D7E4c3A7F940B240b7357a4bFED30D17f9497",
+    "name": "Holoworld AI",
+    "symbol": "HOLO",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/HOLO/logo.svg"
+  },
+  {
+    "address": "0xC9d23ED2ADB0f551369946BD377f8644cE1ca5c4",
+    "name": "Hyperlane",
+    "symbol": "HYPER",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/HYPER/logo.svg"
+  },
+  {
+    "address": "0x9537c772c6092DB4B93cFBA93659bB5a8c0E133D",
+    "name": "Hyperlane",
+    "symbol": "HYPERSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x02CF1778c07584D92b610E0C03fA285DfD00c354",
+    "name": "KalyCoin",
+    "symbol": "KLC",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x0bBeA6812fb3fcBcA126eDb558e551B3f1702026",
+    "name": "LITKEY",
+    "symbol": "LITKEY",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LITKEY/logo.svg"
+  },
+  {
+    "address": "0x7F39BcdCa8E0E581c1d43aaa1cB862AA1c8C2047",
+    "name": "Lumia Token",
+    "symbol": "LUMIA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LUMIA/logo.svg"
+  },
+  {
+    "address": "0xFE2DD2d57a05F89438F3AEC94EaFA4070396bab0",
+    "name": "Matchain",
+    "symbol": "MAT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/MAT/logo.svg"
+  },
+  {
+    "address": "0x7b4Bf9fEcCfF207eF2CB7101Ceb15b8516021AcD",
+    "name": "MilkyWay",
+    "symbol": "MILK",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/MILK/logo.svg"
+  },
+  {
+    "address": "0xcb508877ffe5a085B2474641dD3B28F8Bc22A57c",
+    "name": "Project Mirai",
+    "symbol": "MIRAI",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/MIRAI/logo.jpg"
+  },
+  {
+    "address": "0x8e1e6BF7E13C400269987B65Ab2b5724b016CaEF",
+    "name": "MITO",
+    "symbol": "MITO",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/MITO/logo.svg"
+  },
+  {
+    "address": "0x5651fA7a726B9Ec0cAd00Ee140179912B6E73599",
+    "name": "OORT",
+    "symbol": "OORT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/OORT/logo.svg"
+  },
+  {
+    "address": "0xDcE63e8cc7f1E2Ed25a226166abE3217c19d0BF1",
+    "name": "Ponder",
+    "symbol": "PNDR",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/PNDR/logo.jpeg"
+  },
+  {
+    "address": "0xaf53d56ff99f1322515e54fdde93ff8b3b7dafd5",
+    "name": "Prometeus",
+    "symbol": "PROM",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/PROM/logo.svg"
+  },
+  {
+    "address": "0x6f0037C79d144d5B8E3E6f04E49FBb5f25fD508f",
+    "name": "RCADE",
+    "symbol": "RCADE",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/RCADE/logo.svg"
+  },
+  {
+    "address": "0xd86E6ef14b96D942eF0AbF0720C549197EA8c528",
+    "name": "RDO Token",
+    "symbol": "RDO",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/RDO/logo.svg"
+  },
+  {
+    "address": "0x1f36ecf13394712c944805f38d1463cf54C0C2C8",
+    "name": "Taiko Token",
+    "symbol": "TAIKO",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TAIKO/logo.svg"
+  },
+  {
+    "address": "0x6c58E4a513D3A8062E57f41a1442e003aF14eBb5",
+    "name": "TGT",
+    "symbol": "TGT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TGT/logo.svg"
+  },
+  {
+    "address": "0x6a2608Dabe09bc1128EEC7275B92DFB939D5Db3f",
+    "name": "Toshi",
+    "symbol": "TOSHI",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TOSHI/logo.svg"
+  },
+  {
+    "address": "0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x55d398326f99059fF775485246999027B3197955",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x1d58e204ca59328007469A614522903d69dc0A4C",
+    "name": "VERA",
+    "symbol": "VRA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/VRA/logo.png"
+  },
+  {
+    "address": "0x7130d2A12B9BCbFAe4f2634d864A1Ee1Ce3Ead9c",
+    "name": "Wrapped BTC",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "logoURI": ""
+  },
+  {
+    "address": "0x6A9A65B84843F5fD4aC9a0471C4fc11AFfFBce4a",
+    "name": "Lorenzo Wrapped Bitcoin",
+    "symbol": "enzoBTC",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/enzoBTC/logo.svg"
+  },
+  {
+    "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+    "name": "Renzo Restaked ETH",
+    "symbol": "ezETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EZETH/logo.svg"
+  },
+  {
+    "address": "0xaca92e438df0b2401ff60da7e4337b687a2435da",
+    "name": "MetaMask USD",
+    "symbol": "mUSD",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/mUSD/logo.svg"
+  },
+  {
+    "address": "0xf6718b2701d4a6498ef77d7c152b2137ab28b8a3",
+    "name": "Lorenzo stBTC",
+    "symbol": "stBTC",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/stBTC/logo.svg"
+  },
+  {
+    "address": "0x6E9804a08092D8ba4E69DaCF422Df12459F2599E",
+    "name": "Staked HYPER",
+    "symbol": "stHYPER",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/stHYPER/logo.svg"
+  },
+  {
+    "address": "0xf0c8c5fc69fCC3fA49C319Fdf422D8279756afE2",
+    "name": "Staked HYPER",
+    "symbol": "stHYPERSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x437cc33344a0B27A429f795ff6B469C72698B291",
+    "name": "WrappedM by M^0",
+    "symbol": "wM",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/wM/logo.svg"
+  }
+]

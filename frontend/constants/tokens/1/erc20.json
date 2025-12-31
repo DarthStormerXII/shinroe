@@ -1,0 +1,443 @@
+[
+  {
+    "address": "0xba83b5ed3f12Bfa44f066f03eE0433419B74f469",
+    "name": "Best Wallet Token",
+    "symbol": "BEST",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/BEST/logo.svg"
+  },
+  {
+    "address": "0xBBDE7EFB7a1AB3ED9122a14b33dC5C07D982367E",
+    "name": "CENT",
+    "symbol": "CENT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/CENT/logo.svg"
+  },
+  {
+    "address": "0xAa9806c938836627Ed1a41Ae871c7E1889AE02Ca",
+    "name": "LayerEdge",
+    "symbol": "EDGEN",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EDGEN/logo.svg"
+  },
+  {
+    "address": "0x6055Dc6Ff1077eebe5e6D2BA1a1f53d7Ef8430dE",
+    "name": "Eclipse",
+    "symbol": "ES",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/ES/logo.svg"
+  },
+  {
+    "address": "0x85E9ae52B10f35e3D15264F1E906895B1D7Da1a0",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0xB89371D7d6Fe8Eb98732cECD8fbEEF7dbfC3B0Bb",
+    "name": "ETN",
+    "symbol": "ETN",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETN/logo.svg"
+  },
+  {
+    "address": "0x1aBaEA1f7C830bD89Acc67eC4af516284b1bC33c",
+    "name": "Euro Coin",
+    "symbol": "EURC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/EURC/logo.svg"
+  },
+  {
+    "address": "0x74c8290836612e6251E49e8f3198fdD80C4DbEB8",
+    "name": "Renzo Restaked ETH (STAGING)",
+    "symbol": "EZETH-STAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x236501327e701692a281934230af0b6be8df3353",
+    "name": "Fluence",
+    "symbol": "FLT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/FLT/logo.svg"
+  },
+  {
+    "address": "0xE7deE4823EE18F1347F1Cf7997f70B94eFDe2E1F",
+    "name": "Form",
+    "symbol": "FORM",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/FORM/logo.svg"
+  },
+  {
+    "address": "0x675B68AA4d9c2d3BB3F0397048e62E6B7192079c",
+    "name": "FUEL",
+    "symbol": "FUEL",
+    "decimals": 9,
+    "logoURI": "/deployments/warp_routes/FUEL/logo.svg"
+  },
+  {
+    "address": "0xcf5104d094e3864cfcbda43b82e1cefd26a016eb",
+    "name": "Humanity",
+    "symbol": "H",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/H/logo.svg"
+  },
+  {
+    "address": "0x93A2Db22B7c736B341C32Ff666307F4a9ED910F5",
+    "name": "Hyperlane",
+    "symbol": "HYPER",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/HYPER/logo.svg"
+  },
+  {
+    "address": "0xC10c27afcb915439C27cAe54F5F46Da48cd71190",
+    "name": "Hyperlane",
+    "symbol": "HYPERSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x8F08B70456eb22f6109F57b8fafE862ED28E6040",
+    "name": "King Protocol",
+    "symbol": "KING",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/KING/logo.svg"
+  },
+  {
+    "address": "0x4D4eb0E8B160f6EbF63cC6d36060ffec09301B42",
+    "name": "Lit Protocol",
+    "symbol": "LITKEY",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LITKEY/logo.svg"
+  },
+  {
+    "address": "0xD9343a049D5DBd89CD19DC6BcA8c48fB3a0a42a7",
+    "name": "Lumia Token",
+    "symbol": "LUMIA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LUMIA/logo.svg"
+  },
+  {
+    "address": "0xC210B2cB65ed3484892167F5e05F7ab496Ab0598",
+    "name": "Bridged LUKSO (Hyperlane)",
+    "symbol": "LYX",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LYX/logo.svg"
+  },
+  {
+    "address": "0x5651fA7a726B9Ec0cAd00Ee140179912B6E73599",
+    "name": "OORT",
+    "symbol": "OORT",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/OORT/logo.svg"
+  },
+  {
+    "address": "0x45804880de22913dafe09f4980848ece6ecbaf78",
+    "name": "Paxos Gold",
+    "symbol": "PAXG",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/PAXG/logo.svg"
+  },
+  {
+    "address": "0x73624d2dEF952C77a1f3B5AD995eef53E49639EC",
+    "name": "Ponder",
+    "symbol": "PNDR",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/PNDR/logo.jpeg"
+  },
+  {
+    "address": "0xfc82bb4ba86045af6f327323a46e80412b91b27d",
+    "name": "Prometeus",
+    "symbol": "PROM",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/PROM/logo.svg"
+  },
+  {
+    "address": "0x9E1a2b6de93164b77Fc5CA11e647EECB38BB463D",
+    "name": "Renzo Restaked LST Stage",
+    "symbol": "PZETHSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x57240C3E140f98abe315CA8E0213c7a77F34A334",
+    "name": "RDO Token",
+    "symbol": "RDO",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/RDO/logo.svg"
+  },
+  {
+    "address": "0xd8B543fEac4EEcEF5a46a926e10D6f4a72de6fE0",
+    "name": "Renzo",
+    "symbol": "REZ",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/REZ/REZ-logo.svg"
+  },
+  {
+    "address": "0x84631c0d0081FDe56DeB72F6DE77abBbF6A9f93a",
+    "name": "Re7 Labs LRT",
+    "symbol": "Re7LRT",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x14862c03A0cACcC1aB328B062E64e31B2a1afcd7",
+    "name": "SEDA",
+    "symbol": "SEDA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/SEDA/logo.svg"
+  },
+  {
+    "address": "0x53ccE6d10e43d1B3D11872Ad22eC2aCd8d2537B8",
+    "name": "SMOL",
+    "symbol": "SMOL",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/SMOL/logo.svg"
+  },
+  {
+    "address": "0xe0B7AD7F8F26e2b00C8b47b5Df370f15F90fCF48",
+    "name": "Solaxy",
+    "symbol": "SOLX",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/SOLX/logo.png"
+  },
+  {
+    "address": "0x17906b1Cd88aA8EfaEfC5e82891B52a22219BD45",
+    "name": "Superseed",
+    "symbol": "SUPR",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/SUPR/logo.svg"
+  },
+  {
+    "address": "0x10dea67478c5F8C5E2D90e5E9B26dBe60c54d800",
+    "name": "Taiko Token",
+    "symbol": "TAIKO",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TAIKO/logo.svg"
+  },
+  {
+    "address": "0xB8fB4E8512c8272e8986058D0318C8cEFcB21aa7",
+    "name": "TIA",
+    "symbol": "TIA",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/TIA/logo.svg"
+  },
+  {
+    "address": "0x2BE3be1D8A556954320c2252dF4f891F64699d50",
+    "name": "Turtle",
+    "symbol": "TURTLE",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TURTLE/logo.png"
+  },
+  {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  },
+  {
+    "address": "0xA0b86991c6218b36c1d19D4a2e9Eb0cE3606eB48",
+    "name": "USD Coin",
+    "symbol": "USDCSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x3f99231dD03a9F0E7e3421c92B7b90fbe012985a",
+    "name": "Startale USD",
+    "symbol": "USDSC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDSC/logo.svg"
+  },
+  {
+    "address": "0xdAC17F958D2ee523a2206206994597C13D831ec7",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDT/logo.svg"
+  },
+  {
+    "address": "0x177778F19E89dD1012BdBe603F144088A95C4B53",
+    "name": "Vana",
+    "symbol": "VANA",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0xF411903cbC70a74d22900a5DE66A2dda66507255",
+    "name": "VERA",
+    "symbol": "VRA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/VRA/logo.png"
+  },
+  {
+    "address": "0x2260FAC5E5542a773Aa44fBCfeDf7C193bc2C599",
+    "name": "Wrapped BTC",
+    "symbol": "WBTC",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/WBTC/logo.svg"
+  },
+  {
+    "address": "0xB1ea329f0B79d0b213957569594ca2a9dE637215",
+    "name": "Wrapped Ether",
+    "symbol": "WETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/WETH/logo.svg"
+  },
+  {
+    "address": "0x0797c6f55f5c9005996A55959A341018cF69A963",
+    "name": "Tether Gold",
+    "symbol": "XAUt",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oXAUT/logo.svg"
+  },
+  {
+    "address": "0x5fD13359Ba15A84B76f7F87568309040176167cd",
+    "name": "Amphor Restaked ETH",
+    "symbol": "amphrETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/AMPHRETH/logo.svg"
+  },
+  {
+    "address": "0x9ba021b0a9b958b5e75ce9f6dff97c7ee52cb3e6",
+    "name": "Autocompounding Pirex Ether",
+    "symbol": "apxETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/APXETH/logo.svg"
+  },
+  {
+    "address": "0xcbb7c0000ab88b473b1f5afd9ef808440eed33bf",
+    "name": "Coinbase Wrapped BTC",
+    "symbol": "cbBTC",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/CBBTC/logo.svg"
+  },
+  {
+    "address": "0x6468e79A80C0eaB0F9A2B574c8d5bC374Af59414",
+    "name": "E-RADIX",
+    "symbol": "eXRD",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/XRD/logo.svg"
+  },
+  {
+    "address": "0xC8140dA31E6bCa19b287cC35531c2212763C2059",
+    "name": "Renzo Restaked ETH",
+    "symbol": "ezETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EZETH/logo.svg"
+  },
+  {
+    "address": "0x15700B564Ca08D9439C58cA5053166E8317aa138",
+    "name": "fastUSD",
+    "symbol": "fastUSD",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/FASTUSD/logo.svg"
+  },
+  {
+    "address": "0xaca92e438df0b2401ff60da7e4337b687a2435da",
+    "name": "MetaMask USD",
+    "symbol": "mUSD",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/mUSD/logo.svg"
+  },
+  {
+    "address": "0xe9ebd666954B7F0B5B044704c86B126651f6235d",
+    "name": "pumpBTC.sei",
+    "symbol": "pumpBTC.sei",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/pumpBTCsei/pumpBTCsei-logo.svg"
+  },
+  {
+    "address": "0xfa78Ea5d8C39E0a8852aBAAF88aE4D32349b7D02",
+    "name": "pumpBTC.stk",
+    "symbol": "pumpBTC.stk",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/pumpBTCstk/logo.svg"
+  },
+  {
+    "address": "0x2Cd2644EdAB51CB2122f37e03E5f997661d49cfE",
+    "name": "pumpBTC.uni",
+    "symbol": "pumpBTC.uni",
+    "decimals": 8,
+    "logoURI": "/deployments/warp_routes/pumpBTCuni/pumpBTCuni-logo.svg"
+  },
+  {
+    "address": "0xbC5511354C4A9a50DE928F56DB01DD327c4e56d5",
+    "name": "Renzo Restaked LST",
+    "symbol": "pzETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/PZETH/logo.svg"
+  },
+  {
+    "address": "0x7a4EffD87C2f3C55CA251080b1343b605f327E3a",
+    "name": "Restaking Vault ETH",
+    "symbol": "rstETH",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0xa860e01Cc4A889BB2917EC97104510A2e1Ae0e53",
+    "name": "Staked HYPER",
+    "symbol": "stHYPER",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/stHYPER/logo.svg"
+  },
+  {
+    "address": "0x9FB258cbd8415C4Fda62092003FCB54F60Af670B",
+    "name": "Staked HYPER",
+    "symbol": "stHYPERSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x48A612A6da945205a221E94BB9F40B0550Cd2C4e",
+    "name": "stTIA",
+    "symbol": "stTIA",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/stTIA/logo.svg"
+  },
+  {
+    "address": "0x19e099B7aEd41FA52718D780dDA74678113C0b32",
+    "name": "Eclipse Turbo ETH",
+    "symbol": "tETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/tETH/logo.svg"
+  },
+  {
+    "address": "0x722a851B6798D65b80526562Fc3a36E19b1F883b",
+    "name": "Eclipse Turbo USD",
+    "symbol": "tUSD",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/tUSD/logo.svg"
+  },
+  {
+    "address": "0xa582e9e96F5D58A1202ad216E89926283a5dD056",
+    "name": "uBTC",
+    "symbol": "uBTC",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/UBTC/logo.svg"
+  },
+  {
+    "address": "0x437cc33344a0B27A429f795ff6B469C72698B291",
+    "name": "WrappedM by M^0",
+    "symbol": "wM",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/wM/logo.svg"
+  },
+  {
+    "address": "0x917cee801a67f933f2e6b33fc0cd1ed2d5909d88",
+    "name": "Super Symbiotic LRT",
+    "symbol": "weETHs",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/weETHs/logo.svg"
+  },
+  {
+    "address": "0x7f39C581F595B53c5cb19bD0b3f8dA6c935E2Ca0",
+    "name": "Wrapped liquid staked Ether 2.0",
+    "symbol": "wstETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/WSTETH/logo.svg"
+  }
+]

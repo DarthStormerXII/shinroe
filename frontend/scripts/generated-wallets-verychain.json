@@ -1,0 +1,62 @@
+[
+  {
+    "address": "0xa9818C665afe86DA2137C0137512355A1DCa18A3",
+    "name": "김민준",
+    "englishName": "Minjun Kim",
+    "privateKey": "0x1dc127dbb22f6ad8c490b202aff4c61595f1134604e26f2352f1b99fe245da00"
+  },
+  {
+    "address": "0xebeaB254Caeb3930e9B171f1FcdE3db834dd5c0d",
+    "name": "이서연",
+    "englishName": "Seoyeon Lee",
+    "privateKey": "0x0197193d773f7350ee9e57a035246024e64f653614e1518b400bbc734ec90bde"
+  },
+  {
+    "address": "0x4623831922964aC60a9FcE97ae6c783A8640a053",
+    "name": "박지호",
+    "englishName": "Jiho Park",
+    "privateKey": "0xefba055542ed00e16947dcfc6a627149ce4db35d57ae47e08390fd0b56c2576d"
+  },
+  {
+    "address": "0x84bb7De3826f464CBB7c53f340B144C91e1595ea",
+    "name": "최수아",
+    "englishName": "Sua Choi",
+    "privateKey": "0xb60b301c27a61d8dba2146570ea8cced8600b7526e2cfd488bbb5978a7a477f2"
+  },
+  {
+    "address": "0xEe511834231a0cD868bfE779cc18D77B440E385f",
+    "name": "정하준",
+    "englishName": "Hajun Jung",
+    "privateKey": "0x64b69d6e51d36cca76c83500c161a830ebd82046c21d9ae15b4508673b44bae6"
+  },
+  {
+    "address": "0x0cb48D801d250cA7391CfFA0C568047D1E85Ed95",
+    "name": "강예은",
+    "englishName": "Yeeun Kang",
+    "privateKey": "0x9c5f724e4aee55b6dc92134fe97c79dbbdef3fda824b5c9ebe9efb96c625223b"
+  },
+  {
+    "address": "0xD5e7074456e1A09a12aE1F84D3608790ff508B05",
+    "name": "조현우",
+    "englishName": "Hyunwoo Jo",
+    "privateKey": "0xc86f38ee17c284e6df50b5f33d2594b7bda2c33182196dd67da3b3f797261f20"
+  },
+  {
+    "address": "0x0f9A3492571CF51dedb420EE7588939929B8B4fa",
+    "name": "윤지우",
+    "englishName": "Jiwoo Yoon",
+    "privateKey": "0x52d505dd282c7233ec13dea8cb56843a9248ead91ad89e897310fa77d9aad059"
+  },
+  {
+    "address": "0x17Ea0C62AD7c16B44aD535325C15b621738e2fB2",
+    "name": "임도윤",
+    "englishName": "Doyun Lim",
+    "privateKey": "0x666395d72e690035d824c74f6eb86189d41a06bf08c52c474533435aae3fe911"
+  },
+  {
+    "address": "0x7BAaa396C07F8b12ec3245f3Ba65A2297C107366",
+    "name": "한서진",
+    "englishName": "Seojin Han",
+    "privateKey": "0xa00dd7c816e8c5a83c94e9079bd4bf03f347415e64aa59aa46d0f3e07a1d4a4f"
+  }
+]

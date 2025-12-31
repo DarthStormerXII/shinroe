@@ -1,0 +1,30 @@
+[
+  {
+    "address": "0xdEAddEaDdeadDEadDEADDEAddEADDEAddead1111",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  },
+  {
+    "address": "0x201EBa5CC46D216Ce6DC03F6a759e8E766e956aE",
+    "name": "Tether USD",
+    "symbol": "USDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDT/logo.svg"
+  },
+  {
+    "address": "0x1217BfE6c773EEC6cc4A38b5Dc45B92292B6E189",
+    "name": "OpenUSDT",
+    "symbol": "oUSDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oUSDT/logo.svg"
+  },
+  {
+    "address": "0x0290B74980C051EB46b84b1236645444e77da0E9",
+    "name": "OpenUSDT",
+    "symbol": "oUSDTSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  }
+]

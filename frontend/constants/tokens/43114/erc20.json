@@ -1,0 +1,37 @@
+[
+  {
+    "address": "0xa38Fce8bf2fA38a97749332724b9db3FF44F006D",
+    "name": "LITKEY",
+    "symbol": "LITKEY",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LITKEY/logo.svg"
+  },
+  {
+    "address": "0x02EB40D41676F20eDcF95f9110f00412ca53a85F",
+    "name": "Lumia Token",
+    "symbol": "LUMIA",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LUMIA/logo.svg"
+  },
+  {
+    "address": "0x0e2A546a53678ee8F8605748193a8c114fA0317F",
+    "name": "OFFICIAL TRUMP",
+    "symbol": "TRUMP",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TRUMP/logo.png"
+  },
+  {
+    "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  },
+  {
+    "address": "0x30974f73A4ac9E606Ed80da928e454977ac486D2",
+    "name": "OpenXAUT",
+    "symbol": "oXAUT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oXAUT/logo.svg"
+  }
+]

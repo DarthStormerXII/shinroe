@@ -1,0 +1,17 @@
+{
+  "name": "evm-starter-scripts",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "faucet": "npx tsx faucet.ts"
+  },
+  "dependencies": {
+    "viem": "^2.36.0",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "tsx": "^4.7.0",
+    "@types/node": "^20.0.0"
+  }
+}

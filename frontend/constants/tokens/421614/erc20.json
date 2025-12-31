@@ -1,0 +1,9 @@
+[
+  {
+    "address": "0x75faf114eafb1BDbe2F0316DF893fd58CE46AA4d",
+    "name": "USD Coin",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/USDC/logo.svg"
+  }
+]

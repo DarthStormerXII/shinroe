@@ -1,0 +1,72 @@
+[
+  {
+    "address": "0xdF17853b7a56499d7d6CAe0cEa3003EfC8257B5b",
+    "name": "Dai Stablecoin",
+    "symbol": "DAI",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/DAI/logo.svg"
+  },
+  {
+    "address": "0x5EA461E19ba6C002b7024E4A2e9CeFe79a47d3bB",
+    "name": "Renzo Restaked ETH Stage 7",
+    "symbol": "EZETHSTAGE",
+    "decimals": 18,
+    "logoURI": ""
+  },
+  {
+    "address": "0x94930Cbfed2483b69DfBed9d96a9CdD7c27D1393",
+    "name": "LITKEY",
+    "symbol": "LITKEY",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/LITKEY/logo.svg"
+  },
+  {
+    "address": "0xB88F86E0c403B02d4cCF893Fc37312A18Fa2Fe1B",
+    "name": "Turtle",
+    "symbol": "TURTLE",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/TURTLE/logo.png"
+  },
+  {
+    "address": "0xc508E179297ef72e65909e4D072758C2d0B92B83",
+    "name": "USDC",
+    "symbol": "USDC",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x2416092f143378750bb29b79eD961ab195CcEea5",
+    "name": "Renzo Restaked ETH",
+    "symbol": "ezETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/EZETH/logo.svg"
+  },
+  {
+    "address": "0xaca92e438df0b2401ff60da7e4337b687a2435da",
+    "name": "MetaMask USD",
+    "symbol": "mUSD",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/mUSD/logo.svg"
+  },
+  {
+    "address": "0x1217BfE6c773EEC6cc4A38b5Dc45B92292B6E189",
+    "name": "OpenUSDT",
+    "symbol": "oUSDT",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/oUSDT/logo.svg"
+  },
+  {
+    "address": "0x0290B74980C051EB46b84b1236645444e77da0E9",
+    "name": "OpenUSDT",
+    "symbol": "oUSDTSTAGE",
+    "decimals": 6,
+    "logoURI": ""
+  },
+  {
+    "address": "0x437cc33344a0B27A429f795ff6B469C72698B291",
+    "name": "WrappedM by M^0",
+    "symbol": "wM",
+    "decimals": 6,
+    "logoURI": "/deployments/warp_routes/wM/logo.svg"
+  }
+]

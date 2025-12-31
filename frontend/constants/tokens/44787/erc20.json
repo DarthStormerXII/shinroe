@@ -1,0 +1,9 @@
+[
+  {
+    "address": "0x78fe869f19f917fde4192c51c446Fbd3721788ee",
+    "name": "Ether",
+    "symbol": "ETH",
+    "decimals": 18,
+    "logoURI": "/deployments/warp_routes/ETH/logo.svg"
+  }
+]

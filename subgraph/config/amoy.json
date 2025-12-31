@@ -1,0 +1,23 @@
+{
+  "network": "amoy",
+  "scoreRegistry": {
+    "address": "0xd6b6ac24eefc78fa270824dac65f855175cd080e",
+    "startBlock": 31420862
+  },
+  "endorsementVault": {
+    "address": "0xd0d05fef053a21828321a9273002b13ddd12536f",
+    "startBlock": 31420862
+  },
+  "badgeNFT": {
+    "address": "0x9b42b592b2d0e8b845d9975671c48dae90123876",
+    "startBlock": 31420862
+  },
+  "tokenFactory": {
+    "address": "0x86EbE9dB7c20d7EE7F2D81759b7dAe54697a822D",
+    "startBlock": 31420862
+  },
+  "airdropVault": {
+    "address": "0x6598341d88B72dCb8816Ea5c3BD3d25379b5dd94",
+    "startBlock": 31420862
+  }
+}
