@@ -1,0 +1,62 @@
+# ============================================================================
+# TEMPLATE: Subgraph Manifest
+# Replace: ContractName, network, address, startBlock, events
+# ============================================================================
+
+specVersion: 1.2.0
+indexerHints:
+  prune: auto
+schema:
+  file: ./schema.graphql
+dataSources:
+  - kind: ethereum
+    name: ContractName
+    network: sepolia  # mainnet | sepolia | base | arbitrum-one | optimism | matic
+    source:
+      address: "0x..."  # From deployment.config.json
+      abi: ContractName
+      startBlock: 0     # Block contract was deployed
+    mapping:
+      kind: ethereum/events
+      apiVersion: 0.0.9
+      language: wasm/assemblyscript
+      entities:
+        - Transfer
+        - Account
+        - Stats
+        - DailySnapshot
+      abis:
+        - name: ContractName
+          file: ./abis/ContractName.json
+      eventHandlers:
+        - event: Transfer(indexed address,indexed address,uint256)
+          handler: handleTransfer
+        # Add more event handlers as needed:
+        # - event: Approval(indexed address,indexed address,uint256)
+        #   handler: handleApproval
+      file: ./src/mapping.ts
+
+# ============================================================================
+# Optional: Dynamic data sources (templates)
+# Uncomment and configure if needed
+# ============================================================================
+
+# templates:
+#   - kind: ethereum
+#     name: TokenTemplate
+#     network: sepolia
+#     source:
+#       abi: Token
+#     mapping:
+#       kind: ethereum/events
+#       apiVersion: 0.0.9
+#       language: wasm/assemblyscript
+#       entities:
+#         - Transfer
+#       abis:
+#         - name: Token
+#           file: ./abis/Token.json
+#       eventHandlers:
+#         - event: Transfer(indexed address,indexed address,uint256)
+#           handler: handleTransfer
+#       file: ./src/token-mapping.ts

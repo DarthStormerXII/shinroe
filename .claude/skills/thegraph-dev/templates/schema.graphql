@@ -1,0 +1,68 @@
+# ============================================================================
+# TEMPLATE: Subgraph Schema
+# Replace: EntityName, fields as needed
+# ============================================================================
+
+# Immutable event log - use for transfer/swap records (much faster indexing)
+type Transfer @entity(immutable: true) {
+  "Unique ID: tx hash + log index"
+  id: Bytes!
+  "Sender address"
+  from: Bytes!
+  "Recipient address"
+  to: Bytes!
+  "Transfer amount (raw)"
+  amount: BigInt!
+  "Block timestamp"
+  timestamp: BigInt!
+  "Block number"
+  blockNumber: BigInt!
+  "Transaction hash"
+  transactionHash: Bytes!
+}
+
+# Mutable entity - use for entities that change over time
+type Account @entity {
+  "Account address"
+  id: Bytes!
+  "Current balance (raw)"
+  balance: BigInt!
+  "Number of transfers made"
+  transferCount: Int!
+  "Transfers sent from this account"
+  transfersOut: [Transfer!]! @derivedFrom(field: "from")
+  "Transfers received by this account"
+  transfersIn: [Transfer!]! @derivedFrom(field: "to")
+  "First seen timestamp"
+  firstSeen: BigInt!
+  "Last activity timestamp"
+  lastActive: BigInt!
+}
+
+# Singleton entity - use for global statistics
+type Stats @entity {
+  "Always 'singleton'"
+  id: ID!
+  "Total number of transfers"
+  totalTransfers: BigInt!
+  "Total volume transferred (raw)"
+  totalVolume: BigInt!
+  "Number of unique accounts"
+  uniqueAccounts: Int!
+  "Last updated block"
+  lastUpdatedBlock: BigInt!
+}
+
+# Time-series entity - use for historical data
+type DailySnapshot @entity {
+  "Format: YYYY-MM-DD"
+  id: ID!
+  "Date as Unix timestamp (start of day)"
+  date: Int!
+  "Number of transfers on this day"
+  transferCount: Int!
+  "Total volume on this day (raw)"
+  volume: BigInt!
+  "Number of unique active accounts"
+  activeAccounts: Int!
+}
