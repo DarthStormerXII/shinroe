@@ -1,0 +1,189 @@
+{
+  "description": "Seed wallets for Shinroe testing. DO NOT use these on mainnet with real funds.",
+  "warning": "These private keys are for TESTING ONLY. Anyone with access can control these wallets.",
+  "network": "verychain",
+  "generated": "2024-01-01T00:00:00Z",
+  "wallets": {
+    "alice": {
+      "name": "Alice",
+      "description": "Power user with all badges, high score (850)",
+      "privateKey": "0x1111111111111111111111111111111111111111111111111111111111111111",
+      "address": "0x19E7E376E7C213B7E7e7e46cc70A5dD086DAff2A",
+      "role": "deployer",
+      "score": 850,
+      "badges": [
+        "VERIFIED_IDENTITY",
+        "TRUSTED_TRADER",
+        "COMMUNITY_BUILDER",
+        "EARLY_ADOPTER",
+        "ELITE_SCORE"
+      ]
+    },
+    "bob": {
+      "name": "Bob",
+      "description": "Trader user with good score (720)",
+      "privateKey": "0x2222222222222222222222222222222222222222222222222222222222222222",
+      "address": "0x1563915e194D8CfBA1943570603F7606A3115508",
+      "role": "user",
+      "score": 720,
+      "badges": [
+        "VERIFIED_IDENTITY",
+        "TRUSTED_TRADER"
+      ]
+    },
+    "carol": {
+      "name": "Carol",
+      "description": "Community builder with moderate score (680)",
+      "privateKey": "0x3333333333333333333333333333333333333333333333333333333333333333",
+      "address": "0x5CbDd86a2FA8Dc4bDdd8a8f69dBa48572EeC07FB",
+      "role": "user",
+      "score": 680,
+      "badges": [
+        "VERIFIED_IDENTITY",
+        "COMMUNITY_BUILDER"
+      ]
+    },
+    "david": {
+      "name": "David",
+      "description": "Early adopter with lower score (590)",
+      "privateKey": "0x4444444444444444444444444444444444444444444444444444444444444444",
+      "address": "0x7564105E977516C53bE337314c7E53838967bDaC",
+      "role": "user",
+      "score": 590,
+      "badges": [
+        "VERIFIED_IDENTITY",
+        "EARLY_ADOPTER"
+      ]
+    },
+    "eve": {
+      "name": "Eve",
+      "description": "Elite trader with high score (810)",
+      "privateKey": "0x5555555555555555555555555555555555555555555555555555555555555555",
+      "address": "0xe1fAE9b4fAB2F5726677ECfA912d96b0B683e6a9",
+      "role": "user",
+      "score": 810,
+      "badges": [
+        "VERIFIED_IDENTITY",
+        "TRUSTED_TRADER",
+        "ELITE_SCORE"
+      ]
+    },
+    "frank": {
+      "name": "Frank",
+      "description": "New user with low score (450)",
+      "privateKey": "0x6666666666666666666666666666666666666666666666666666666666666666",
+      "address": "0xdb2430B4e9AC14be6554d3942822BE74811A1AF9",
+      "role": "user",
+      "score": 450,
+      "badges": [
+        "VERIFIED_IDENTITY"
+      ]
+    }
+  },
+  "profiles": {
+    "alice": {
+      "name": "Alice Chen",
+      "bio": "Web3 builder and DeFi enthusiast. Building the future of decentralized reputation.",
+      "avatar": "professional woman developer",
+      "twitter": "@alice_web3",
+      "github": "alicechen"
+    },
+    "bob": {
+      "name": "Bob Kim",
+      "bio": "Crypto trader and market analyst. 5 years in DeFi.",
+      "avatar": "professional man trader",
+      "twitter": "@bob_trades",
+      "github": "bobkim"
+    },
+    "carol": {
+      "name": "Carol Park",
+      "bio": "Community manager and DAO contributor. Passionate about governance.",
+      "avatar": "professional woman community manager",
+      "twitter": "@carol_dao",
+      "github": "carolpark"
+    },
+    "david": {
+      "name": "David Lee",
+      "bio": "Early crypto adopter since 2017. NFT collector.",
+      "avatar": "professional man early adopter",
+      "twitter": "@david_nft",
+      "github": "davidlee"
+    },
+    "eve": {
+      "name": "Eve Jung",
+      "bio": "Quantitative trader and smart contract auditor.",
+      "avatar": "professional woman quant",
+      "twitter": "@eve_quant",
+      "github": "evejung"
+    },
+    "frank": {
+      "name": "Frank Yoon",
+      "bio": "New to Web3, excited to learn and contribute!",
+      "avatar": "professional man newcomer",
+      "twitter": "@frank_newbie",
+      "github": "frankyoon"
+    }
+  },
+  "airdrops": [
+    {
+      "id": 0,
+      "name": "Community Reward Token",
+      "symbol": "COMM",
+      "description": "Rewarding our verified community members for their participation and trust.",
+      "image": "community reward celebration",
+      "totalSupply": "1000000",
+      "claimAmount": "100",
+      "poolSize": "10000",
+      "durationDays": 30,
+      "minScore": 0
+    },
+    {
+      "id": 1,
+      "name": "Elite Reward Token",
+      "symbol": "ELITE",
+      "description": "Exclusive rewards for elite score holders who have proven their reputation.",
+      "image": "elite gold trophy",
+      "totalSupply": "500000",
+      "claimAmount": "500",
+      "poolSize": "5000",
+      "durationDays": 14,
+      "minScore": 800
+    },
+    {
+      "id": 2,
+      "name": "Early Bird Token",
+      "symbol": "EARLY",
+      "description": "Thank you for being an early adopter of the Shinroe reputation system.",
+      "image": "sunrise early bird",
+      "totalSupply": "250000",
+      "claimAmount": "250",
+      "poolSize": "2500",
+      "durationDays": 7,
+      "minScore": 0
+    },
+    {
+      "id": 3,
+      "name": "Trader Reward Token",
+      "symbol": "TRADE",
+      "description": "Recognizing trusted traders with proven track records.",
+      "image": "trading charts success",
+      "totalSupply": "750000",
+      "claimAmount": "200",
+      "poolSize": "8000",
+      "durationDays": 60,
+      "minScore": 600
+    },
+    {
+      "id": 4,
+      "name": "Welcome Token",
+      "symbol": "WELC",
+      "description": "Welcome to Shinroe! Your journey to building on-chain reputation starts here.",
+      "image": "welcome handshake",
+      "totalSupply": "2000000",
+      "claimAmount": "50",
+      "poolSize": "50000",
+      "durationDays": 90,
+      "minScore": 0
+    }
+  ]
+}

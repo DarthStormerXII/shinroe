@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-01-03T06:26:16.934Z",
+  "profiles": {
+    "alice": {
+      "avatarIpfs": "ipfs://bafkreihkolvqtp4jhlhquj5yygo7kaudi444dffnxb62ubxflx4tvoxfye",
+      "metadataIpfs": "ipfs://bafkreielxy3dbsakfwphnjikkupy3qhjc3zaumahunrieekgrvkgc3j35a"
+    },
+    "bob": {
+      "avatarIpfs": "ipfs://bafkreifqlzbcxs2bjkpedme27zlblaklcpeq5nmi2wybeyclejojohda3m",
+      "metadataIpfs": "ipfs://bafkreifcj3fp2tldatggi3572o4xlofmmmfrncywc6pxcyjs6hdavh7z5a"
+    },
+    "carol": {
+      "avatarIpfs": "ipfs://bafkreifu3jjhsuqxcppofcgaa2e4ps6p7lmcmk27csyqe3u72p63s3vsfi",
+      "metadataIpfs": "ipfs://bafkreidwwebdzr7y2foun26424atuig3ukdwaxjjvwiyawyxqmtqtnpc2a"
+    },
+    "david": {
+      "avatarIpfs": "ipfs://bafkreibwfwxbvg3g6lmpxzifoebl2qdgrug42lcprpvzbp6lud4yhrveui",
+      "metadataIpfs": "ipfs://bafkreihu57ljxpr5xkeqzooizjkppc7wdkdch2q73qfauymf2rnv4fmyoy"
+    },
+    "eve": {
+      "avatarIpfs": "ipfs://bafkreibqzu7ydhrutzbwub6mgeuajnx6izib53lb6cailaopklvn6ao6fi",
+      "metadataIpfs": "ipfs://bafkreid3r2c627wqqkfxeu2epepdtlhnt2eaehiwevxifg5saiqkbbbnte"
+    },
+    "frank": {
+      "avatarIpfs": "ipfs://bafkreifsp5jbb36fcqywyvhmfyvxx5jjam5whyejw5qjwd4wyfudwh2jdm",
+      "metadataIpfs": "ipfs://bafkreian3ne32jguoo4ghsyfp73c7k3fnieclfnyb5awwa6rmsypwgecae"
+    }
+  },
+  "airdrops": {
+    "COMM": {
+      "imageIpfs": "ipfs://bafkreifiz3jinl6o7haokbzepxgunvwtk6zpg36tgub3nnpguaow54bytm",
+      "metadataIpfs": "ipfs://bafkreihxzjjbct7j7kqqtgyj7pbpk77hyve4cinhcrhx7cuaweflhhzmtq"
+    },
+    "ELITE": {
+      "imageIpfs": "ipfs://bafkreiarm6qerlpu5ek75p5ok7mspnpw7fscdi22xolhlgousk2wolydvu",
+      "metadataIpfs": "ipfs://bafkreibexmefsck5tyn5h5gmhfmtggzqxpbmowgvotzo23s57gohnagjne"
+    },
+    "EARLY": {
+      "imageIpfs": "ipfs://bafkreihawuzingyhkjqms5iazcat42cl3eheuo7zd6pbm7ecnnorcj2npq",
+      "metadataIpfs": "ipfs://bafkreihz24pbiuskgfxqzbuor7kikkhzckail2dyscuh6s3eiwqusspdii"
+    },
+    "TRADE": {
+      "imageIpfs": "ipfs://bafkreigj4lpxcwx2u5t7azzatc4ndldpw6eoy5uhqg2mtcfwejg2rnw2rm",
+      "metadataIpfs": "ipfs://bafkreifaerci7rcqa7z3hribptknbmg5iihz4mx5lmly5lnfpqhyzj5lki"
+    },
+    "WELC": {
+      "imageIpfs": "ipfs://bafkreihhf434ppfxhh43elhc3ed7sfpiawg6qanezf2yupaeljisydser4",
+      "metadataIpfs": "ipfs://bafkreiewnglrmioez7xvw24tfy72ayzqhf5mcbwkcyluhkduwa3kghsznm"
+    }
+  },
+  "badges": {
+    "VERIFIED_IDENTITY": {
+      "imageIpfs": "ipfs://bafkreieqjxptdsi65jpzvdtfpq367twqjsfdz6whltxmgxfsohj7555foq",
+      "metadataIpfs": "ipfs://bafkreiejb7zaivrxbinmg5d2juoexzlv7ogdbtrx3uiw65u6kkystoazui"
+    },
+    "TRUSTED_TRADER": {
+      "imageIpfs": "ipfs://bafkreihmtq5a73eypowqsfgvz7fajzbaqs6236zttpwjf5lfkrno2soh2a",
+      "metadataIpfs": "ipfs://bafkreifjbwjfxpciwj6xohgq5aifyfztbdj4ihrnjs25waxg7k44iquklu"
+    },
+    "COMMUNITY_BUILDER": {
+      "imageIpfs": "ipfs://bafkreihwo6o6ehblya2t6ncnjjcqjqklwaz6bdiahq5cwa6d6tduegx6bu",
+      "metadataIpfs": "ipfs://bafkreidbwt4ah2lbbmd4qexqggccrbxazk35eujo4afmlwngelrpusdeom"
+    },
+    "EARLY_ADOPTER": {
+      "imageIpfs": "ipfs://bafkreial77agnxqxhndnio6hpjh3mia2xwc4ctiuycnbwuemivb2p7orza",
+      "metadataIpfs": "ipfs://bafkreigsbalz2k4qijfx32zb52m2bcyzoka5exq4zpc5a7c4va3s5mfyju"
+    },
+    "ELITE_SCORE": {
+      "imageIpfs": "ipfs://bafkreihci2ewuktgqgtk2aqo2a5iklv3w63agbk6w7lz7t7rlxqzp5ulii",
+      "metadataIpfs": "ipfs://bafkreiewpe5vz3numgq7gx3jtl6qmife37s5xsmrqd6zxhdtuglkji2g3e"
+    }
+  }
+}
