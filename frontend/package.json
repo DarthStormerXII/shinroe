@@ -51,7 +51,6 @@
     "@uniswap/v3-sdk": "^3.26.0",
     "@wepin/provider-js": "^0.0.31",
     "@wepin/sdk-js": "^0.0.35",
-    "better-sqlite3": "^12.4.1",
     "buffer": "^6.0.3",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
@@ -82,7 +81,6 @@
   },
   "devDependencies": {
     "@eslint/eslintrc": "^3",
-    "@types/better-sqlite3": "^7.6.13",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",

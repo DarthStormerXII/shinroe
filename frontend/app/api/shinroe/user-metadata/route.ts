@@ -1,5 +1,4 @@
 import { NextRequest, NextResponse } from 'next/server'
-import { db } from '@/lib/db/client'
 import { isAddress } from 'viem'
 
 interface UserMetadata {
@@ -10,6 +9,9 @@ interface UserMetadata {
   createdAt: string
   updatedAt: string
 }
+
+// In-memory store for user metadata (in production, use Supabase or similar)
+const userMetadataStore = new Map<string, UserMetadata>()
 
 // GET /api/shinroe/user-metadata?address=0x... or ?search=displayName
 export async function GET(request: NextRequest) {
@@ -23,41 +25,26 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({ success: false, error: 'Invalid address' }, { status: 400 })
       }
 
-      const row = db.prepare(
-        'SELECT * FROM user_metadata WHERE LOWER(address) = LOWER(?)'
-      ).get(address) as Record<string, unknown> | undefined
+      const metadata = userMetadataStore.get(address.toLowerCase())
 
-      if (!row) {
+      if (!metadata) {
         return NextResponse.json({ success: true, data: null })
-      }
-
-      const metadata: UserMetadata = {
-        address: row.address as string,
-        displayName: row.display_name as string | null,
-        avatarUrl: row.avatar_url as string | null,
-        bio: row.bio as string | null,
-        createdAt: row.created_at as string,
-        updatedAt: row.updated_at as string,
       }
 
       return NextResponse.json({ success: true, data: metadata })
     }
 
     if (search) {
-      const rows = db.prepare(
-        'SELECT * FROM user_metadata WHERE display_name LIKE ? LIMIT 20'
-      ).all(`%${search}%`) as Record<string, unknown>[]
+      const results: UserMetadata[] = []
+      const searchLower = search.toLowerCase()
 
-      const results = rows.map(row => ({
-        address: row.address as string,
-        displayName: row.display_name as string | null,
-        avatarUrl: row.avatar_url as string | null,
-        bio: row.bio as string | null,
-        createdAt: row.created_at as string,
-        updatedAt: row.updated_at as string,
-      }))
+      userMetadataStore.forEach((metadata) => {
+        if (metadata.displayName?.toLowerCase().includes(searchLower)) {
+          results.push(metadata)
+        }
+      })
 
-      return NextResponse.json({ success: true, data: results })
+      return NextResponse.json({ success: true, data: results.slice(0, 20) })
     }
 
     return NextResponse.json({ success: false, error: 'Provide address or search' }, { status: 400 })
@@ -77,22 +64,20 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, error: 'Valid address required' }, { status: 400 })
     }
 
-    const existing = db.prepare(
-      'SELECT address FROM user_metadata WHERE LOWER(address) = LOWER(?)'
-    ).get(address)
+    const now = new Date().toISOString()
+    const addressLower = address.toLowerCase()
+    const existing = userMetadataStore.get(addressLower)
 
-    if (existing) {
-      db.prepare(`
-        UPDATE user_metadata
-        SET display_name = ?, avatar_url = ?, bio = ?
-        WHERE LOWER(address) = LOWER(?)
-      `).run(displayName || null, avatarUrl || null, bio || null, address)
-    } else {
-      db.prepare(`
-        INSERT INTO user_metadata (address, display_name, avatar_url, bio)
-        VALUES (?, ?, ?, ?)
-      `).run(address.toLowerCase(), displayName || null, avatarUrl || null, bio || null)
+    const metadata: UserMetadata = {
+      address: addressLower,
+      displayName: displayName || null,
+      avatarUrl: avatarUrl || null,
+      bio: bio || null,
+      createdAt: existing?.createdAt || now,
+      updatedAt: now,
     }
+
+    userMetadataStore.set(addressLower, metadata)
 
     return NextResponse.json({ success: true })
   } catch (error) {
