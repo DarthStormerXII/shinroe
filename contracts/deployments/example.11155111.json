@@ -1,0 +1,56 @@
+{
+  "_comment": "EXAMPLE FILE - This shows the structure of deployment state files",
+  "_comment2": "Real files are named {chainId}.json (e.g., 11155111.json)",
+
+  "chainId": 11155111,
+  "chainName": "sepolia",
+  "lastDeployedAt": "2025-12-07T10:30:00Z",
+  "deployer": "0x1234567890123456789012345678901234567890",
+
+  "contracts": {
+    "Token": {
+      "address": "0xTokenAddressHere",
+      "deployTxHash": "0xDeployTransactionHash",
+      "blockNumber": 12345678,
+      "verified": true,
+      "verifiedAt": "2025-12-07T10:31:00Z"
+    },
+    "Staking": {
+      "address": "0xStakingAddressHere",
+      "deployTxHash": "0xDeployTransactionHash2",
+      "blockNumber": 12345680,
+      "verified": true,
+      "verifiedAt": "2025-12-07T10:33:00Z"
+    },
+    "Governance": {
+      "address": "0xGovernanceAddressHere",
+      "deployTxHash": "0xDeployTransactionHash3",
+      "blockNumber": 12345685,
+      "verified": true,
+      "verifiedAt": "2025-12-07T10:35:00Z"
+    }
+  },
+
+  "setupCalls": [
+    {
+      "stepId": 4,
+      "contract": "Token",
+      "function": "grantRole",
+      "txHash": "0xSetupCallTxHash",
+      "success": true,
+      "executedAt": "2025-12-07T10:32:00Z"
+    },
+    {
+      "stepId": 8,
+      "contract": "Staking",
+      "function": "setGovernance",
+      "txHash": "0xSetupCallTxHash2",
+      "success": true,
+      "executedAt": "2025-12-07T10:36:00Z"
+    }
+  ],
+
+  "completedSteps": [1, 4, 7, 8],
+  "lastCompletedStep": 8,
+  "status": "complete"
+}

@@ -1,0 +1,9 @@
+{
+  "chainId": 4613,
+  "network": "verychain",
+  "deployer": "0x32FE11d9900D63350016374BE98ff37c3Af75847",
+  "timestamp": 1767182600,
+  "ScoreRegistry": "0xDbddf0CD81fc748916970E6871cB79f2F71C67D5",
+  "EndorsementVault": "0xCd0fE3743e32592e0f12e9509a82cFc0a20a292A",
+  "BadgeNFT": "0xd1C09961798017267187297Cc2E032a0F1E3605b"
+}
