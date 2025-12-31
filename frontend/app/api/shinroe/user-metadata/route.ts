@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { isAddress } from 'viem'
+import { supabase } from '@/lib/supabase/client'
 
 interface UserMetadata {
   address: string
@@ -9,9 +10,6 @@ interface UserMetadata {
   createdAt: string
   updatedAt: string
 }
-
-// In-memory store for user metadata (in production, use Supabase or similar)
-const userMetadataStore = new Map<string, UserMetadata>()
 
 // GET /api/shinroe/user-metadata?address=0x... or ?search=displayName
 export async function GET(request: NextRequest) {
@@ -25,26 +23,55 @@ export async function GET(request: NextRequest) {
         return NextResponse.json({ success: false, error: 'Invalid address' }, { status: 400 })
       }
 
-      const metadata = userMetadataStore.get(address.toLowerCase())
+      const { data, error } = await supabase
+        .from('shinroe_users')
+        .select('*')
+        .eq('address', address.toLowerCase())
+        .single()
 
-      if (!metadata) {
+      if (error && error.code !== 'PGRST116') {
+        console.error('Supabase error:', error)
+        return NextResponse.json({ success: false, error: 'Database error' }, { status: 500 })
+      }
+
+      if (!data) {
         return NextResponse.json({ success: true, data: null })
+      }
+
+      const metadata: UserMetadata = {
+        address: data.address,
+        displayName: data.display_name,
+        avatarUrl: data.avatar_url,
+        bio: data.bio,
+        createdAt: data.created_at,
+        updatedAt: data.updated_at,
       }
 
       return NextResponse.json({ success: true, data: metadata })
     }
 
     if (search) {
-      const results: UserMetadata[] = []
-      const searchLower = search.toLowerCase()
+      const { data, error } = await supabase
+        .from('shinroe_users')
+        .select('*')
+        .ilike('display_name', `%${search}%`)
+        .limit(20)
 
-      userMetadataStore.forEach((metadata) => {
-        if (metadata.displayName?.toLowerCase().includes(searchLower)) {
-          results.push(metadata)
-        }
-      })
+      if (error) {
+        console.error('Supabase search error:', error)
+        return NextResponse.json({ success: false, error: 'Database error' }, { status: 500 })
+      }
 
-      return NextResponse.json({ success: true, data: results.slice(0, 20) })
+      const results: UserMetadata[] = (data || []).map((row) => ({
+        address: row.address,
+        displayName: row.display_name,
+        avatarUrl: row.avatar_url,
+        bio: row.bio,
+        createdAt: row.created_at,
+        updatedAt: row.updated_at,
+      }))
+
+      return NextResponse.json({ success: true, data: results })
     }
 
     return NextResponse.json({ success: false, error: 'Provide address or search' }, { status: 400 })
@@ -64,20 +91,24 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ success: false, error: 'Valid address required' }, { status: 400 })
     }
 
-    const now = new Date().toISOString()
     const addressLower = address.toLowerCase()
-    const existing = userMetadataStore.get(addressLower)
 
-    const metadata: UserMetadata = {
-      address: addressLower,
-      displayName: displayName || null,
-      avatarUrl: avatarUrl || null,
-      bio: bio || null,
-      createdAt: existing?.createdAt || now,
-      updatedAt: now,
+    const { error } = await supabase
+      .from('shinroe_users')
+      .upsert(
+        {
+          address: addressLower,
+          display_name: displayName || null,
+          avatar_url: avatarUrl || null,
+          bio: bio || null,
+        },
+        { onConflict: 'address' }
+      )
+
+    if (error) {
+      console.error('Supabase upsert error:', error)
+      return NextResponse.json({ success: false, error: 'Database error' }, { status: 500 })
     }
-
-    userMetadataStore.set(addressLower, metadata)
 
     return NextResponse.json({ success: true })
   } catch (error) {

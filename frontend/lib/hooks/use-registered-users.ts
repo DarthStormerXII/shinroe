@@ -55,7 +55,8 @@ export function useRegisteredUsers(): UseRegisteredUsersReturn {
 
           return {
             address: user.id as Address,
-            displayName: metadata?.displayName || null,
+            // Use subgraph displayName as fallback if off-chain metadata not available
+            displayName: metadata?.displayName || user.displayName || null,
             avatarUrl: metadata?.avatarUrl || null,
             badges: user.badges.map((b) => b.badgeType),
             endorsementCount: user.endorsementsReceived.filter((e) => e.active).length,
