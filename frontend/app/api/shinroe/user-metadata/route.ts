@@ -7,6 +7,7 @@ interface UserMetadata {
   displayName: string | null
   avatarUrl: string | null
   bio: string | null
+  veryChatHandle: string | null
   createdAt: string
   updatedAt: string
 }
@@ -43,6 +44,7 @@ export async function GET(request: NextRequest) {
         displayName: data.display_name,
         avatarUrl: data.avatar_url,
         bio: data.bio,
+        veryChatHandle: data.verychat_handle,
         createdAt: data.created_at,
         updatedAt: data.updated_at,
       }
@@ -67,6 +69,7 @@ export async function GET(request: NextRequest) {
         displayName: row.display_name,
         avatarUrl: row.avatar_url,
         bio: row.bio,
+        veryChatHandle: row.verychat_handle,
         createdAt: row.created_at,
         updatedAt: row.updated_at,
       }))
@@ -85,7 +88,7 @@ export async function GET(request: NextRequest) {
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
-    const { address, displayName, avatarUrl, bio } = body
+    const { address, displayName, avatarUrl, bio, veryChatHandle } = body
 
     if (!address || !isAddress(address)) {
       return NextResponse.json({ success: false, error: 'Valid address required' }, { status: 400 })
@@ -101,6 +104,7 @@ export async function POST(request: NextRequest) {
           display_name: displayName || null,
           avatar_url: avatarUrl || null,
           bio: bio || null,
+          verychat_handle: veryChatHandle || null,
         },
         { onConflict: 'address' }
       )
